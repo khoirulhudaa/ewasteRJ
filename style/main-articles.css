@@ -16,6 +16,10 @@ body {
     margin: 0;
 }
 
+* {
+    overflow-x: hidden;
+}
+
 ::-webkit-scrollbar {
     width: 5px;
 }
@@ -290,4 +294,114 @@ body {
     padding-left: 70px;
     overflow: hidden;
     padding-top: 14px;
+}
+
+
+@media screen and (max-width: 567px) {
+    .navbar {
+        width: 100vw;
+        max-height: max-content;
+        overflow: hidden;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 1px;
+        padding-right: 3px;
+        position: absolute;
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(10px);
+        z-index: 9999;
+        justify-content: space-between;
+        align-items: none;
+    }
+    
+    .navbar button {
+        width: 119px;
+        cursor: pointer;
+        height: 48px;
+        border-radius: 100px;
+        text-align: center;
+        font-weight: 500;
+        border: none;
+        outline: none;
+    }
+
+    .btn_masuk {
+        display: none;
+    }
+
+    .navbar a {
+        text-decoration: none;
+    }
+
+    .btn_daftar {
+        display: none;
+    }
+
+    .btn_masuk2 {
+        color: #1E272E;
+        margin-right: 24px;
+        outline: none;
+        border: none;
+        margin-top: 20px;
+        display: inline;
+    }
+    
+    .navbar img {
+        width: 60%;
+    }
+    
+    .btn_daftar2 {
+        color: white;
+        background-color: #00B294;
+        outline: none;
+        border: none;
+        margin-top: 20px;
+        display: inline;
+    }
+    
+    .navbar ul {
+        margin-top: 180px;
+        color: white;
+        margin-left: 10px;
+    }
+
+    #btnNavs {
+        display: none;
+    }
+
+    .navbar-toggler {
+        z-index: 33;
+    }
+    
+    .btn_masuk {
+        color: #1E272E;
+        margin-right: 24px;
+        outline: none;
+        border: none;
+    }
+
+    .navbar-toggler {
+        position: relative;
+    }
+
+    button:active {
+        border: none;
+        outline: none;
+    }
+
+    .navbar button {
+        outline: none;
+        border: none;
+    }
+
+    button:focus {
+        outline: none;
+    }
+    
+    .btn_daftar {
+        color: white;
+        background-color: #00B294;
+        outline: none;
+        border: none;
+    }
 }
