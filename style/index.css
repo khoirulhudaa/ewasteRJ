@@ -868,8 +868,11 @@ textarea {
     .navbar {
         width: 100vw;
         max-height: max-content;
-        padding: 0;
         overflow: hidden;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 1px;
+        padding-right: 3px;
         position: absolute;
         background: rgba(255, 255, 255, 0.8);
         backdrop-filter: blur(10px);
@@ -924,7 +927,7 @@ textarea {
     }
     
     .navbar ul {
-        margin-top: 160px;
+        margin-top: 180px;
         color: white;
         margin-left: 10px;
     }
@@ -942,6 +945,24 @@ textarea {
         margin-right: 24px;
         outline: none;
         border: none;
+    }
+
+    .navbar-toggler {
+        position: relative;
+    }
+
+    button:active {
+        border: none;
+        outline: none;
+    }
+
+    .navbar button {
+        outline: none;
+        border: none;
+    }
+
+    button:focus {
+        outline: none;
     }
     
     .btn_daftar {
