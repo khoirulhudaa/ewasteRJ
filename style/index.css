@@ -53,6 +53,13 @@ body {
     margin-left: -10px;
 }
 
+#btnNavs {
+    width: 28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .btn_masuk {
     color: #1E272E;
     margin-right: 24px;
@@ -64,6 +71,22 @@ body {
     color: white;
     background-color: #00B294;
     outline: none;
+    border: none;
+}
+
+.btn_masuk2 {
+    color: #1E272E;
+    margin-right: 24px;
+    outline: none;
+    display: none;
+    border: none;
+}
+
+.btn_daftar2 {
+    color: white;
+    background-color: #00B294;
+    outline: none;
+    display: none;
     border: none;
 }
 
@@ -865,11 +888,45 @@ textarea {
         border: none;
         outline: none;
     }
+
+    .btn_masuk {
+        display: none;
+    }
+
+    .navbar a {
+        text-decoration: none;
+    }
+
+    .btn_daftar {
+        display: none;
+    }
+
+    .btn_masuk2 {
+        color: #1E272E;
+        margin-right: 24px;
+        outline: none;
+        border: none;
+        margin-top: 20px;
+        display: inline;
+    }
+    
+    .btn_daftar2 {
+        color: white;
+        background-color: #00B294;
+        outline: none;
+        border: none;
+        margin-top: 20px;
+        display: inline;
+    }
     
     .navbar ul {
-        margin-top: 90px;
+        margin-top: 140px;
         color: white;
         margin-left: 10px;
+    }
+
+    #btnNavs {
+        display: none;
     }
 
     .navbar-toggler {
