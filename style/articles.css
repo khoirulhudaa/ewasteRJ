@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+
+h1, h2, h3 {
+    font-family: 'Spartan', sans-serif;
+}
+
+h4, h5, h6, small, p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    padding: 0;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(56, 56, 56);
+}
+
+.navbar {
+    width: 100vw;
+    max-height: 104px;
+    padding: 45px 95px 51px 97px;
+    position: absolute;
+    background: white;
+    backdrop-filter: blur(10px);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar button {
+    width: 119px;
+    cursor: pointer;
+    height: 48px;
+    border-radius: 100px;
+    text-align: center;
+    font-weight: 500;
+    border: none;
+    outline: none;
+}
+
+.navbar ul {
+    margin-top: 30px;
+    margin-left: -10px;
+}
+
+.btn_masuk {
+    color: #1E272E;
+    margin-right: 24px;
+    outline: none;
+    border: none;
+}
+
+.btn_daftar {
+    color: white;
+    background-color: #00B294;
+    outline: none;
+    border: none;
+}
+
+.articles {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    flex-direction: column;
+    height: max-content;
+    padding: 50px 20px ;
+}
+
+.hero-articles {
+    width: 100vw;
+    height: max-content;
+    display: flex;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.articles h1 {
+    margin-left: 30px;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.green {
+    color: rgb(16, 163, 3);
+}
+
+.hero-left {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-left img {
+    width: 83%;
+}
+
+.hero-right {
+    width: 65%;
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    padding-top: 20px;
+    flex-direction: column;
+}
+
+.hero-right h3 {
+    font-weight: bold;
+    width: 70%;
+}
+
+.hero-right h4 {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.hero-right p {
+    width: 80%;
+}
+
+.btn-articles-top {
+    border: none;
+    outline: none;
+    width: max-content;
+    color: white;
+    font-weight: 500;
+    background-color: rgb(16, 163, 3);
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 18px;
+    padding: 6px 14px;
+}
+
+.post {
+    padding-bottom: 50px;
+}
+
+.list-post {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    position: relative;
+    height: max-content;
+    flex-wrap: wrap;
+}
+
+.post h1 {
+    font-weight: bold;
+    margin-left: 60px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.card-post {
+    border-radius: 10px;
+    overflow: hidden;
+    width: 340px;
+    margin: 20px;
+}
+
+.card-head {
+    border-radius: 8px;
+}
+
+.card-body h3 {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.card-body h4 {
+    font-weight: 500;
+    font-size: 16px;
+    margin: 14px 0;
+}
+
+.btn-post {
+    border: none;
+    outline: none;
+    width: max-content;
+    color: white;
+    font-weight: 500;
+    background-color: rgb(16, 163, 3);
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 18px;
+    padding: 6px 14px;
+}
+
+.btn-load {
+    position: relative;
+    display: flex;
+    border: none;
+    margin-left: auto;
+    margin-top: 40px;
+    margin-right: auto;
+    outline: none;
+    width: max-content;
+    color: white;
+    font-weight: 500;
+    background-color: rgb(16, 163, 3);
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 22px;
+    padding: 6px 14px;
+}
+
+.footer {
+    width: 100vw;
+    height: max-content;
+    padding-top: 50px;
+    padding-bottom: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(16, 163, 3);
+    color: white;
+}
+
+.logo-footer img {
+    background-color: #fff;
+    padding: 10px;
+    transform: scale(0.9);
+}
+
+.logo-footer, .content-footer, .sosmed {
+    text-align: center;
+}
+
+.content-footer p {
+    align-items: center;
+    width: 30%;
+    margin-top: 14px;
+    padding-bottom: 14px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sosmed {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 18px;
+    border-bottom: 2px solid rgba(231, 231, 231, 0.671);
+}
+
+.copyright {
+    position: relative;
+    width: 90%;
+    padding-left: 70px;
+    overflow: hidden;
+    padding-top: 14px;
+}

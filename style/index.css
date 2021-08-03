@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+
+h1, h2, h3 {
+    font-family: 'Spartan', sans-serif;
+}
+
+h4, h5, h6, small, p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
 body {
     padding: 0;
     overflow-x: hidden;
@@ -63,7 +76,7 @@ body {
     height: 600px;
     display: flex;
     flex-direction: column;
-    background-image: url('../img/hero.svg');
+    /* background-image: url('../img/hero.svg'); */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -227,6 +240,12 @@ body {
     margin-bottom: 4px;
 }
 
+.card-drop h2 {
+    font-size: 23px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
 .title-drop h1 {
     position: relative;
     font-weight: bold;
@@ -369,11 +388,11 @@ body {
 }
 
 .benefits-left {
-    width: 30%;
+    width: 40%;
     display: flex;
     align-items: center;
     height: 500px;
-    padding: 14px;
+    padding: 24px;
 }
 
 .benefits-left img {
@@ -381,7 +400,7 @@ body {
 }
 
 .benefits-right {
-    width: 70%;
+    width: 60%;
     height: 500px;
 }
 
@@ -394,6 +413,10 @@ body {
     flex-direction: column;
 }
 
+.child-benefits h3 {
+    font-size: 20px;
+}
+
 .child-benefits {
     width: 70%;
     margin-bottom: 30px;
@@ -403,10 +426,6 @@ body {
     padding: 20px;
     display: flex;
     transition: 0.4s;
-}
-
-.child-benefits:nth-child(1) {
-    box-shadow: 1px 2px 6px rgba(179, 179, 179, 0.747);
 }
 
 .child-benefits:hover {
@@ -506,7 +525,8 @@ body {
     position: relative;
 }
 
-.card-products:nth-child(1) {
+.card-products:hover {
+    transition: 0.4s;
     box-shadow: 1px 2px 6px rgba(192, 192, 192, 0.726);
 }
 
@@ -712,7 +732,7 @@ body {
 
 form input {
     border-radius: 6px;
-    background-color: rgb(216, 216, 216);
+    background-color: rgb(238, 238, 238);
     border: none;
     outline: none;
     padding-left: 20px;
@@ -732,7 +752,7 @@ form input {
 
 textarea {
     border-radius: 6px;
-    background-color: rgb(216, 216, 216);
+    background-color: rgb(238, 238, 238);
     border: none;
     outline: none;
     font-size: 19px;
@@ -819,4 +839,48 @@ textarea {
     padding-left: 70px;
     overflow: hidden;
     padding-top: 14px;
+}
+
+@media screen and (max-width: 567px) {
+    .navbar {
+        width: 100vw;
+        max-height: 104px;
+        padding: 45px 95px 51px 97px;
+        position: absolute;
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(10px);
+        z-index: 9999;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .navbar button {
+        width: 119px;
+        cursor: pointer;
+        height: 48px;
+        border-radius: 100px;
+        text-align: center;
+        font-weight: 500;
+        border: none;
+        outline: none;
+    }
+    
+    .navbar ul {
+        margin-top: 30px;
+        margin-left: -10px;
+    }
+    
+    .btn_masuk {
+        color: #1E272E;
+        margin-right: 24px;
+        outline: none;
+        border: none;
+    }
+    
+    .btn_daftar {
+        color: white;
+        background-color: #00B294;
+        outline: none;
+        border: none;
+    }
 }

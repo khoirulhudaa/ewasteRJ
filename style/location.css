@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+
+h1, h2, h3 {
+    font-family: 'Spartan', sans-serif;
+}
+
+h4, h5, h6, small, p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    padding: 0;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(56, 56, 56);
+}
+
+.navbar {
+    width: 100vw;
+    max-height: 104px;
+    padding: 45px 95px 51px 97px;
+    position: absolute;
+    background: white;
+    backdrop-filter: blur(10px);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar button {
+    width: 119px;
+    cursor: pointer;
+    height: 48px;
+    border-radius: 100px;
+    text-align: center;
+    font-weight: 500;
+    border: none;
+    outline: none;
+}
+
+.navbar ul {
+    margin-top: 30px;
+    margin-left: -10px;
+}
+
+.btn_masuk {
+    color: #1E272E;
+    margin-right: 24px;
+    outline: none;
+    border: none;
+}
+
+.btn_daftar {
+    color: white;
+    background-color: #00B294;
+    outline: none;
+    border: none;
+}
+
+#mapid { 
+    height: 440px; 
+    width: 100vw;
+}
+
+.list-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 70px;
+    width: 100vw;
+    height: max-content;
+}
+
+.list-product h1 {
+    position: relative;
+    font-weight: bold;
+}
+
+.green {
+    color: rgb(16, 163, 3);
+}
+
+.list-product h1::before {
+    position: absolute;
+    content: '';
+    top: -10px;
+    left: 0;
+    width: 80px;
+    height: 6px;
+    background-color: rgb(16, 163, 3);;
+}
+
+.list-product .p {
+    width: 40%;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    flex-wrap: wrap;
+    height: max-content;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.btn-load {
+    position: relative;
+    top: -30px;
+    display: flex;
+    border: none;
+    margin-left: auto;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-right: auto;
+    outline: none;
+    width: max-content;
+    color: white;
+    flex-wrap: wrap;
+    font-weight: 500;
+    background-color: rgb(16, 163, 3);
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 22px;
+    padding: 6px 14px;
+}
+
+.card-product {
+    overflow: hidden;
+    width: 340px;
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    padding: 10px;
+    margin: 8px 8px 35px 8px;
+    transition: 0.4s;
+}
+
+.card-product:hover {
+    cursor: pointer;
+    box-shadow: 1px 2px 6px rgba(150, 150, 150, 0.589);
+    transition: 0.4s;
+}
+
+.card-body h3 {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.card-product .card-head {
+    height: 20%;
+    overflow: hidden;
+}
+
+.card-head img {
+    width: 15%;
+    height: auto;
+}
+
+.card-body small {
+    color: rgb(0, 211, 0);
+}
+
+.card-product .card-body {
+    height: 60%;
+    width: 100%;
+}
+
+.footer {
+    width: 100vw;
+    height: max-content;
+    padding-top: 50px;
+    padding-bottom: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(16, 163, 3);
+    color: white;
+}
+
+.logo-footer img {
+    background-color: #fff;
+    padding: 10px;
+    transform: scale(0.9);
+}
+
+.logo-footer, .content-footer, .sosmed {
+    text-align: center;
+}
+
+.content-footer p {
+    align-items: center;
+    width: 30%;
+    margin-top: 14px;
+    padding-bottom: 14px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sosmed {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 18px;
+    border-bottom: 2px solid rgba(231, 231, 231, 0.671);
+}
+
+.copyright {
+    position: relative;
+    width: 90%;
+    padding-left: 70px;
+    overflow: hidden;
+    padding-top: 14px;
+}
