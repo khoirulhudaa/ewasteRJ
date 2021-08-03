@@ -910,6 +910,10 @@ textarea {
         display: inline;
     }
     
+    .navbar img {
+        width: 60%;
+    }
+    
     .btn_daftar2 {
         color: white;
         background-color: #00B294;
@@ -920,7 +924,7 @@ textarea {
     }
     
     .navbar ul {
-        margin-top: 140px;
+        margin-top: 160px;
         color: white;
         margin-left: 10px;
     }
