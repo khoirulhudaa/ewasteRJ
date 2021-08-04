@@ -24,6 +24,22 @@ body {
     width: 5px;
 }
 
+.btn_masuk2 {
+    color: #1E272E;
+    margin-right: 24px;
+    outline: none;
+    display: none;
+    border: none;
+}
+
+.btn_daftar2 {
+    color: white;
+    background-color: #00B294;
+    outline: none;
+    display: none;
+    border: none;
+}
+
 ::-webkit-scrollbar-thumb {
     background-color: rgb(56, 56, 56);
 }

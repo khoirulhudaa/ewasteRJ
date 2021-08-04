@@ -33,7 +33,7 @@ body {
     max-height: 104px;
     padding: 45px 95px 51px 97px;
     position: absolute;
-    background: white;
+    background-color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
     z-index: 9999;
     justify-content: center;
@@ -54,13 +54,6 @@ body {
 .navbar ul {
     margin-top: 30px;
     margin-left: -10px;
-}
-
-.btn_masuk {
-    color: #1E272E;
-    margin-right: 24px;
-    outline: none;
-    border: none;
 }
 
 .btn_daftar {
@@ -110,6 +103,22 @@ body {
     margin-bottom: 30px;
     left: 0;
     margin-left: 0px;
+}
+
+.btn_masuk2 {
+    color: #1E272E;
+    margin-right: 24px;
+    outline: none;
+    display: none;
+    border: none;
+}
+
+.btn_daftar2 {
+    color: white;
+    background-color: #00B294;
+    outline: none;
+    display: none;
+    border: none;
 }
 
 .green {
@@ -399,7 +408,7 @@ body {
     }
     
     .navbar ul {
-        margin-top: 180px;
+        margin-top: 30px;
         color: white;
         margin-left: 10px;
     }

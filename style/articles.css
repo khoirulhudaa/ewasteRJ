@@ -63,6 +63,22 @@ body {
     border: none;
 }
 
+.btn_masuk2 {
+    color: #1E272E;
+    margin-right: 24px;
+    outline: none;
+    display: none;
+    border: none;
+}
+
+.btn_daftar2 {
+    color: white;
+    background-color: #00B294;
+    outline: none;
+    display: none;
+    border: none;
+}
+
 .btn_daftar {
     color: white;
     background-color: #00B294;
