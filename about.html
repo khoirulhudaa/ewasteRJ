@@ -7,48 +7,53 @@
     <title>EwasteRJ - Community</title>
     <link rel="stylesheet" href="./style/about.css">
     <link rel="stylesheet" href="./bs/css/bootstrap.min.css">
+    <style>
+        .navs {
+            display: none;
+        }
+    </style>
 </head>
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light">
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid" style="display: flex;justify-content: center;align-items: center;">
-            <a class="navbar-brand" href="#" style="width: 28%;;">
+            <a class="navbar-brand" href="#">
                 <img src="./img/logo.svg" alt="a">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" id="toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" id="toggler2"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent" style="width: 43%;">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Locations</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Our activity</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Lates news</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./login.html"><button class="btn_masuk2" type="submit">Sign in</button></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./register.html"><button class="btn_daftar2" type="submit">Sign up</button></a>
-                    </li>
-                </ul>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Locations</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Our activity</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Lates news</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./login.html"><button class="btn_masuk2" type="submit">Sign in</button></a>
+                </li>
+                <li class="nav-item">
+                    <a href="./register.html"><button class="btn_daftar2" type="submit">Sign up</button></a>
+                </li>
+            </ul>
+        </div>
+            <div class="collapse navbar-collapse navs" id="btnNavs">
+                <form class="d-flex">
+                    <a href="./login.html"><button class="btn_masuk" type="submit">Sign in</button></a>
+                    <a href="./register.html"><button class="btn_daftar" type="submit">Sign up</button></a>
+                </form>
             </div>
-                <div class="collapse navbar-collapse navs" id="btnNavs">
-                    <form class="d-flex">
-                        <a href="./login.html"><button class="btn_masuk" type="submit">Sign in</button></a>
-                        <a href="./register.html"><button class="btn_daftar" type="submit">Sign up</button></a>
-                    </form>
-                </div>
         </div>
     </nav>
 
@@ -168,5 +173,11 @@
     </section>
     
     <script src="./bs/js/bootstrap.min.js"></script>
+    <script>
+        document.querySelector('.navbar-toggler').addEventListener('click', () => {
+            document.querySelector('.btn_masuk').style.display = 'inline'
+            document.querySelector('.btn_daftar').style.display = 'flex'
+        })
+    </script>
 </body>
 </html>
