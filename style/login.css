@@ -169,9 +169,9 @@ label {
         width: 100%;
         filter: brightness(90%);
         height: 400px;
-        background-size: cover;
+        background-size: 700px;
         background-image: url('../img/banner_auth.svg');
-        background-position: 0px 0px;
+        background-position: 0px -290px;
     }
 
     .log-right {
