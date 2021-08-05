@@ -149,10 +149,9 @@ body {
 
 .list-partners .img {
     overflow: hidden;
-    width: 300px;
-    height: 300px;
     border-radius: 200px;
     margin: 30px;
+    transform: scale(0.9);
 }
 
 .btn_daftar4 {
