@@ -346,6 +346,25 @@ body {
 
 
 @media screen and (max-width: 567px) {
+    
+    .btn_masuk2 {
+        color: #1E272E;
+        margin-right: 24px;
+        outline: none;
+        border: none;
+        margin-top: 20px;
+        display: inline;
+    }
+    
+    .btn_daftar2 {
+        color: white;
+        background-color: #00B294;
+        outline: none;
+        border: none;
+        margin-top: 20px;
+        display: inline;
+    }
+
     .navbar {
         width: 100vw;
         max-height: max-content;
@@ -680,6 +699,10 @@ body {
         margin-left: auto;
         margin-right: auto;
         width: 80%;
+    }
+
+    .card-team img {
+        width: 50%;
     }
 
     .btn-team {
