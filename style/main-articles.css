@@ -429,6 +429,7 @@ body {
         justify-content: center;
         width: 100vw;
         flex-direction: column;
+        overflow: hidden;
         height: max-content;
     }
 
@@ -439,6 +440,7 @@ body {
         padding-left: 40px;
         padding-right: 40px;
         padding-top: 30px;
+        overflow: hidden;
         justify-content: center;
         align-items: center;
         padding-bottom: 20px;
