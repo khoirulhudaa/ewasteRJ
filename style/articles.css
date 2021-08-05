@@ -394,4 +394,209 @@ body {
         outline: none;
         border: none;
     }
+
+    .articles {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100vw;
+        flex-direction: column;
+        height: max-content;
+        padding: 50px 20px ;
+    }
+    
+    .hero-articles {
+        width: 100vw;
+        height: max-content;
+        display: flex;
+        padding-left: 40px;
+        padding-right: 40px;
+        flex-direction: column;
+        padding-top: 30px;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+    
+    .articles h1 {
+        margin-left: 10px;
+        font-size: 40px;
+        font-weight: bold;
+    }
+    
+    .green {
+        color: rgb(16, 163, 3);
+    }
+    
+    .hero-left {
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .hero-left img {
+        width: 90%;
+        margin-left: -50px;
+    }
+    
+    .hero-right {
+        width: 90vw;
+        display: flex;
+        justify-content: left;
+        text-align: left;
+        padding-top: 40px;
+        flex-direction: column;
+    }
+    
+    .hero-right h3 {
+        font-weight: bold;
+        width: 90%;
+    }
+    
+    .hero-right h4 {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+    
+    .hero-right p {
+        width: 94%;
+    }
+    
+    .btn-articles-top {
+        border: none;
+        outline: none;
+        width: max-content;
+        color: white;
+        font-weight: 500;
+        background-color: rgb(16, 163, 3);
+        cursor: pointer;
+        border-radius: 6px;
+        font-size: 18px;
+        padding: 6px 14px;
+    }
+    
+    .post {
+        padding-bottom: 50px;
+    }
+    
+    .list-post {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        position: relative;
+        height: max-content;
+        flex-wrap: wrap;
+    }
+    
+    .post h1 {
+        font-weight: bold;
+        margin-left: 20px;
+        margin-bottom: 30px;
+        position: relative;
+    }
+    
+    .card-post {
+        border-radius: 10px;
+        overflow: hidden;
+        width: 340px;
+        margin: 20px;
+    }
+    
+    .card-head {
+        border-radius: 8px;
+    }
+    
+    .card-body h3 {
+        font-weight: bold;
+        font-size: 18px;
+    }
+    
+    .card-body h4 {
+        font-weight: 500;
+        font-size: 16px;
+        margin: 14px 0;
+    }
+    
+    .btn-post {
+        border: none;
+        outline: none;
+        width: max-content;
+        color: white;
+        font-weight: 500;
+        background-color: rgb(16, 163, 3);
+        cursor: pointer;
+        border-radius: 6px;
+        font-size: 18px;
+        padding: 6px 14px;
+    }
+    
+    .btn-load {
+        position: relative;
+        display: flex;
+        border: none;
+        margin-left: auto;
+        margin-top: 40px;
+        margin-right: auto;
+        outline: none;
+        width: max-content;
+        color: white;
+        font-weight: 500;
+        background-color: rgb(16, 163, 3);
+        cursor: pointer;
+        border-radius: 6px;
+        font-size: 22px;
+        padding: 6px 14px;
+    }
+    
+    .footer {
+        width: 100vw;
+        height: max-content;
+        padding-top: 50px;
+        padding-bottom: 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgb(16, 163, 3);
+        color: white;
+    }
+
+    .logo-footer img {
+        background-color: #fff;
+        padding: 10px;
+        transform: scale(0.7);
+    }
+
+    .logo-footer, .content-footer, .sosmed {
+        text-align: center;
+    }
+
+    .content-footer p {
+        align-items: center;
+        width: 90%;
+        margin-top: 14px;
+        font-size: 16px;
+        padding-bottom: 14px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .sosmed {
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 18px;
+        border-bottom: 2px solid rgba(231, 231, 231, 0.671);
+    }
+
+    .copyright {
+        position: relative;
+        width: 100%;
+        padding-left: 30px;
+        overflow: hidden;
+        padding-top: 14px;
+    }
 }

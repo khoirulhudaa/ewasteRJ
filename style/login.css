@@ -14,6 +14,14 @@ body {
     overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(56, 56, 56);
+}
+
 .login {
     display: flex;
     justify-content: center;
@@ -141,4 +149,141 @@ label {
 .reg {
     font-weight: bold;
     text-decoration: none;
+}
+
+@media screen and (max-width: 576px) {
+    
+    .login {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: max-content;
+        flex-direction: column;
+    }
+    
+    .log-left {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        width: 100%;
+        filter: brightness(90%);
+        height: 400px;
+        background-size: cover;
+        background-image: url('../img/banner_auth.svg');
+        background-position: 0px 0px;
+    }
+
+    .log-right {
+        width: 100%;
+        height: max-content;
+        display: flex;
+        justify-content: center;
+        padding: 90px 30px 30px 0px;
+        flex-direction: column;
+    }
+    
+    .log-right h1 {
+        position: relative;
+        top: -40PX;
+        margin-left: 30px;
+        font-size: 40px;
+    }
+    
+    form {
+        width: 100vw;
+        display: flex;
+        padding-left: 30px;
+        flex-direction: column;
+    }
+    
+    form input {
+        outline: none;
+        background-color: transparent;
+        font-size: 20px;
+        font-weight: 500;
+        padding: 10px 10px 10px 20px;
+        cursor: pointer;
+        border-radius: 3px ;
+        width: 90%;
+        border-radius: 6px;
+        border: 2px solid rgb(211, 211, 211);
+        margin-bottom: 32px;
+    }
+    
+    .green {
+        color: rgb(16, 163, 3);
+    }
+    
+    .log-left h2::before {
+        position: absolute;
+        content: '';
+        top: -15px;
+        width: 60px;
+        z-index: 3;
+        height: 6px;
+        background-color: rgb(16, 163, 3);
+    }
+    
+    .log-left h2 {
+        position: relative;
+        font-weight: bold;
+        margin-left: 0px;
+        margin-top: 120px;
+        font-size: 34px;
+        color: rgb(39, 39, 39);
+    }
+    
+    .log-left p {
+        margin-left: 0px;
+        width: 90%;
+        color: rgb(39, 39, 39);
+    }
+    
+    label {
+        font-weight: bold;
+        margin-bottom: 12px;
+    }
+    
+    .show {
+        position: relative;
+        left: -200px;
+    }
+    
+    .shows {
+        position: relative;
+        left: -200px;
+    }
+    
+    .log-right h1 {
+        font-weight: bold;
+    }
+    
+    ::-webkit-input-placeholder {
+        font-weight: 500;
+        font-size: 18px;
+    }
+    
+    .btn-log {
+        position: relative;
+        border: none;
+        left: -18px;
+        outline: none;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+        font-weight: 500;
+        background-color: rgb(16, 163, 3);
+        cursor: pointer;
+        border-radius: 6px;
+        font-size: 18px;
+        padding: 10px 14px;
+    }
+    
+    .log-right small {
+        font-weight: 500;
+        margin-left: 40px;
+        margin-top: 40px;
+    }
 }
