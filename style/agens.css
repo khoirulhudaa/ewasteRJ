@@ -89,3 +89,296 @@ body {
     display: none;
     border: none;
 }
+
+.navbar ul {
+    position: relative;
+    transform: translate(-50%, -50%);
+    left: 50%;
+}
+
+.green {
+    color: rgb(16, 163, 3);
+}
+
+.partners {
+    padding-top: 60px;
+    text-align: center;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-partners {
+    height: max-content;
+    display: flex;
+    padding-top: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrap {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partners h1 {
+    position: relative;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.btn_masuk4 {
+    color: #1E272E;
+    margin-right: 24px;
+    outline: none;
+    display: none;
+    border: none;
+}
+
+.ewaste {
+    font-size: 20px;
+}
+
+.list-partners .img {
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    border-radius: 200px;
+    margin: 30px;
+}
+
+.btn_daftar4 {
+    color: white;
+    background-color: #00B294;
+    outline: none;
+    display: none;
+    border: none;
+}
+
+.partners h1::before {
+    position: absolute;
+    content: '';
+    margin-top: -14px;
+    left: 0;
+    width: 80px;
+    height: 6px;
+    background-color: rgb(16, 163, 3);
+}
+
+.footer {
+    width: 100vw;
+    height: max-content;
+    padding-top: 50px;
+    padding-bottom: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(16, 163, 3);
+    color: white;
+}
+
+.logo-footer img {
+    background-color: #fff;
+    padding: 10px;
+    transform: scale(0.9);
+}
+
+.logo-footer, .content-footer, .sosmed {
+    text-align: center;
+}
+
+.content-footer p {
+    align-items: center;
+    width: 30%;
+    margin-top: 14px;
+    padding-bottom: 14px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sosmed {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 18px;
+    border-bottom: 2px solid rgba(231, 231, 231, 0.671);
+}
+
+.copyright {
+    position: relative;
+    width: 90%;
+    padding-left: 70px;
+    overflow: hidden;
+    padding-top: 14px;
+}
+
+
+@media screen and (max-width: 567px) {
+    .navbar {
+        width: 100vw;
+        max-height: max-content;
+        overflow: hidden;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 1px;
+        padding-right: 3px;
+        position: absolute;
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(10px);
+        z-index: 9999;
+        justify-content: space-between;
+        align-items: none;
+    }
+    
+    .navbar button {
+        width: 119px;
+        cursor: pointer;
+        height: 48px;
+        border-radius: 100px;
+        text-align: center;
+        font-weight: 500;
+        border: none;
+        outline: none;
+    }
+
+    .btn_masuk {
+        display: none;
+    }
+
+    .navbar a {
+        text-decoration: none;
+    }
+
+    .btn_daftar {
+        display: none;
+    }
+
+    .btn_masuk2 {
+        color: #1E272E;
+        margin-right: 24px;
+        outline: none;
+        border: none;
+        margin-top: 20px;
+        display: inline;
+    }
+    
+    .navbar img {
+        width: 60%;
+    }
+    
+    .btn_daftar2 {
+        color: white;
+        background-color: #00B294;
+        outline: none;
+        border: none;
+        margin-top: 20px;
+        display: inline;
+    }
+    
+    .navbar ul {
+        margin-top: 180px;
+        color: white;
+        margin-left: 10px;
+    }
+
+    #btnNavs {
+        display: none;
+    }
+
+    .navbar-toggler {
+        z-index: 33;
+    }
+    
+    .btn_masuk {
+        color: #1E272E;
+        margin-right: 24px;
+        outline: none;
+        border: none;
+    }
+
+    .navbar-toggler {
+        position: relative;
+    }
+
+    button:active {
+        border: none;
+        outline: none;
+    }
+
+    .navbar button {
+        outline: none;
+        border: none;
+    }
+
+    button:focus {
+        outline: none;
+    }
+    
+    .btn_daftar {
+        color: white;
+        background-color: #00B294;
+        outline: none;
+        border: none;
+    }
+
+    .list-partners .wrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .footer {
+        width: 100vw;
+        height: max-content;
+        padding-top: 50px;
+        padding-bottom: 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgb(16, 163, 3);
+        color: white;
+    }
+
+    .logo-footer img {
+        background-color: #fff;
+        padding: 10px;
+        transform: scale(0.7);
+    }
+
+    .logo-footer, .content-footer, .sosmed {
+        text-align: center;
+    }
+
+    .content-footer p {
+        align-items: center;
+        width: 90%;
+        margin-top: 14px;
+        font-size: 16px;
+        padding-bottom: 14px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .sosmed {
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 18px;
+        border-bottom: 2px solid rgba(231, 231, 231, 0.671);
+    }
+
+    .copyright {
+        position: relative;
+        width: 100%;
+        padding-left: 30px;
+        overflow: hidden;
+        padding-top: 14px;
+    }
+}
