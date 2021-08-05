@@ -1054,7 +1054,7 @@ textarea {
     .boxs {
         position: absolute;
         width: 80vw;
-        bottom: -245px;
+        bottom: -225px;
         height: max-content;
         display: flex;
         justify-content: center;
