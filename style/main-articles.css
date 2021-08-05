@@ -376,7 +376,7 @@ body {
     }
     
     .navbar ul {
-        margin-top: 180px;
+        margin-top: 20px;
         color: white;
         margin-left: 10px;
     }
@@ -576,10 +576,10 @@ body {
 
     .card-artikel2 {
         display: flex;
-        justify-content: center;
+        justify-content: left;
         flex-direction: column-reverse;
         height: max-content;
-        align-items: center ;
+        align-items: left ;
         margin-bottom: 40px;
     }
 
@@ -598,6 +598,7 @@ body {
 
     .card-artikel2 img {
         border-radius: 8px;
+        width: 100%;
     }
 
     .card-artikel2 h4 {

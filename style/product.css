@@ -104,7 +104,7 @@ body {
     padding-top: 20px;
 }
 
-.btn_masuk2 {
+.btn_masuk4 {
     color: #1E272E;
     margin-right: 24px;
     outline: none;
@@ -112,7 +112,7 @@ body {
     border: none;
 }
 
-.btn_daftar2 {
+.btn_daftar4 {
     color: white;
     background-color: #00B294;
     outline: none;
@@ -280,7 +280,7 @@ body {
         display: none;
     }
 
-    .btn_masuk2 {
+    .btn_masuk4 {
         color: #1E272E;
         margin-right: 24px;
         outline: none;
@@ -293,7 +293,7 @@ body {
         width: 60%;
     }
     
-    .btn_daftar2 {
+    .btn_daftar4 {
         color: white;
         background-color: #00B294;
         outline: none;
@@ -303,7 +303,7 @@ body {
     }
     
     .navbar ul {
-        margin-top: 180px;
+        margin-top: 20px;
         color: white;
         margin-left: 10px;
     }
