@@ -1844,4 +1844,25 @@ textarea {
         border: 3px solid #00B294;
         border-radius: 4px;
     }
+        
+    .kotak {
+        position: absolute;
+        width: 100vw;
+        height: 300px;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .kotak1 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: none;
+    }
+
+    .kotak2 {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        bottom: -20px;
+        left: 50%;
+    }
 }
