@@ -147,111 +147,139 @@ body {
     padding-top: 14px;
 }
 
-.title {
-    width: 100vw;
-    margin: 30px 0 50px 0;
-    text-align: center;
+.formulir {
     display: flex;
-    font-size: 17px;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.pp {
-    width: 100vw;
-    display: flex;
-    margin-left: 240px;
-    margin-bottom: 40px;
-    align-items: center;
-}
-
-.btn-edit {
-    border: none;
-    outline: none;
-    background-color: rgb(13, 89, 255);
-    width: 130px;
-    margin-left: 40px;
-    height: max-content;
-    color: white;
-    padding: 10px;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-.form-profile {
-    width: 100vw;
-    position: relative;
-    margin-bottom: 120px;
-    display: flex;
-    flex-direction: column;
-}
-
-.btn-send {
-    border-radius: 4px;
-    background-color: rgb(16, 163, 3);
-    border: none;
-    color: white;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 8px;
-    width: 130px;
-    margin-top: 30px;
-    margin-left: 73%;
-    outline: none;
-    cursor: pointer;
-}
-
-.wrap-fr {
-    position: relative;
-    left: -20px;
-    width: 80vw;
     margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+}
+
+form {
+    position: relative;
+    width: 100vw;
+    margin-top: 110px;
+    margin-left: 240px;
+}
+
+.fre2, .fre3, .fre4, .fre5, .fre6, .fre7, .fre8, .fre9, .fre10 {
+    margin: 0px 0 40px 0;
+    width: 100vw;
     display: flex;
     flex-direction: column;
 }
 
-.child-fr {
+.fre3, .fre4, .fre5, .fre6, .fre7, .fre8, .fre9, .fre10, .fre11{
+    margin: 0px 0 40px 0;
+    width: 75vw;
+    padding-left: 70px;
     display: flex;
-    margin-top: 20px;
     flex-direction: column;
 }
 
 label {
+    margin-bottom: 15px;
+    width: 90%;
     font-weight: bold;
-    margin-top: 14px;
-    margin-bottom: 10px;
 }
 
-.form-profile input {
-    border: 1px solid rgb(189, 189, 189);
-    border-radius: 4px;
-    padding: 12px;
-    width: 80%;
-    font-size: 18px;
-}
-
-.form-profile textarea {
-    border: 1px solid rgb(189, 189, 189);
-    border-radius: 4px;
-    padding: 12px;
-    width: 80%;
+textarea {
     height: 140px;
-    font-size: 18px;
+    border-radius: 4px;
+    padding: 12px;
 }
 
-.bg {
-    border-radius: 400px;
-    width: 200px;
-    height: 200px;
-    background-color: chartreuse;
-}
-
-.profile h1 {
-    font-size: 38px;
-    margin-left: auto;
-    margin-top: 70px;
+.wrap-check {
     margin-bottom: 30px;
-    margin-right: auto;
+    display: flex;
+    padding-left: 30px;
+}
+
+.fre11 input {
+    margin-right: 10px;
+}
+
+.btn {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.btn-formulir {
+    position: relative;
+    border: none;
+    outline: none;
+    width: 180px;
+    margin-left: -95px;
+    color: white;
+    transform: translate(-50%, -50%);
+    margin-top: 30px;
+    font-weight: 500;
+    background-color: rgb(16, 163, 3);
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 9px 14px;
+}
+
+.lain {
+    width: 55%;
+    padding-left: 10px;
+    height: 40px;
+    border-radius: 6px;
+    border: 1px solid rgb(102, 102, 102);
+}
+
+.fre {
+    margin-bottom: 30px;
+}
+
+.formulir .fre1 {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulir .fre2 {
+    width: 80%;
+    padding-left: 70px;
+    display: flex;
+    justify-content: left;
+}
+
+.fre1 input {
+    border-radius: 10px;
+    width: 400px;
+    border: 1px solid rgb(145, 145, 145);
+    color: black;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.fre2 select {
+    border-radius: 10px;
+    width: 60%;
+    border: 1px solid rgb(95, 95, 95);
+    background-color: transparent;
+    color: black;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.formulir {
+    position: relative;
+    height: max-content;
+    width: 100vw;
+}
+
+.formulir h1 {
+    font-size: 46px;
+    margin-top: 70px;
     font-weight: bold;
 }
 
@@ -371,6 +399,171 @@ label {
         border: none;
     }
     
+    .formulir {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80vw;
+    }
+
+    .formulir .fre2 {
+        width: 100vw;
+        padding-left: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    form {
+        width: 100vw;
+        margin-left: 60px;
+        margin-top: 60px;
+    }
+
+    .fre {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .fre2, .fre3, .fre4, .fre5, .fre6, .fre7, .fre8, .fre9, .fre10, .fre11 {
+        margin: 0px 0 40px 0;
+        margin-left: -30px;
+        width: 100vw;
+        padding-left: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    label {
+        margin-bottom: 15px;
+        width: 90%;
+        margin-left: 0px;
+        font-weight: bold;
+    }
+    
+    textarea {
+        height: 140px;
+        border-radius: 4px;
+        padding: 12px;
+    }
+
+    .fre1 {
+        flex-wrap: wrap;
+    }
+
+    .fre11 {
+        padding-left: 2px;
+    }
+    
+    .wrap-check {
+        margin-bottom: 30px;
+        display: flex;
+        width: 100vw;
+        flex-direction: column;
+        padding-left: 0px;
+        justify-content: center;
+        height: max-content;
+        align-items: center;
+    }
+
+    .fre11 label {
+        margin-left: 20px;
+    }
+
+    .wrap-check .check {
+        display: flex;
+        flex-direction: column; 
+        width: 100vw;
+    }
+
+    .ckc {
+        position: relative;
+        top: 20px;
+        right: -100px;
+    }
+
+    .fre input {
+        width: 90vw;
+    }
+
+    .fre select {
+        width: 90vw;
+    }
+
+    .fre2 select {
+        border-radius: 10px;
+        border: 1px solid rgb(95, 95, 95);
+        background-color: transparent;
+        color: black;
+        font-weight: 500;
+        padding: 10px;
+    }
+
+    textarea {
+        position: relative;
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+        
+    .formulir h1 {
+        font-size: 50px;
+        margin-left: -20px;
+        margin-top: 70px;
+        font-weight: bold;
+        margin-right: auto;
+        font-weight: bold;
+    }
+
+    .fre1 input {
+        margin-bottom: 20px;
+    }
+    
+    .fre11 input {
+        margin-right: 10px;
+    }
+    
+    .btn {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .btn-formulir {
+        position: relative;
+        border: none;
+        outline: none;
+        width: 180px;
+        margin-left: auto;
+        color: white;
+        transform: translate(-50%, -50%);
+        margin-top: 30px;
+        font-weight: 500;
+        background-color: rgb(16, 163, 3);
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 18px;
+        padding: 9px 14px;
+    }
+    
+    .lain {
+        width: 90vw;
+        display: flex;
+        justify-content: center;
+        margin-left: 15px;
+        align-items: center;
+        height: 40px;
+        padding-left: 10px;
+        border-radius: 6px;
+        border: 1px solid rgb(102, 102, 102);
+    }
+    
     .footer {
         width: 100vw;
         height: max-content;
@@ -401,104 +594,5 @@ label {
         padding-bottom: 14px;
         margin-left: auto;
         margin-right: auto;
-    }
-        
-    .form-profile input {
-        border: 1px solid rgb(189, 189, 189);
-        border-radius: 4px;
-        padding: 12px;
-        width: 100%;
-        font-size: 18px;
-    }
-
-    form {
-        width: 100vw;
-        overflow-x: hidden;
-        margin-left: -18px;
-    }
-
-    .form-profile textarea {
-        border: 1px solid rgb(189, 189, 189);
-        border-radius: 4px;
-        padding: 12px;
-        width: 100%;
-        height: 140px;
-        font-size: 18px;
-    }
-
-    .title {
-        width: 100vw;
-        margin: 10px 0 40px 0;
-        text-align: center;
-        display: flex;
-        font-size: 17px;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .bg {
-        margin-left: -70px;
-        margin-bottom: 20px;
-    }
-
-    .btn-edit {
-        border: none;
-        outline: none;
-        background-color: rgb(13, 89, 255);
-        width: 130px;
-        margin-left: -60px;
-        height: max-content;
-        color: white;
-        padding: 10px;
-        border-radius: 6px;
-        cursor: pointer;
-    }
-
-    .pp {
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        margin-left: 0px;
-        margin-bottom: 40px;
-        align-items: center;
-    }
-
-    .sosmed {
-        width: 90vw;
-        margin-left: auto;
-        margin-right: auto;
-        padding-bottom: 18px;
-        border-bottom: 2px solid rgba(231, 231, 231, 0.671);
-    }
-
-    .btn-send {
-        border-radius: 4px;
-        background-color: rgb(16, 163, 3);
-        border: none;
-        color: white;
-        font-size: 20px;
-        font-weight: 500;
-        padding: 8px;
-        width: 130px;
-        margin-top: 30px;
-        margin-left: 53px;
-        outline: none;
-        cursor: pointer;
-    }
-
-    .pp {
-        width: 100vw;
-        display: flex;
-        margin-left: 30px;
-        margin-bottom: 40px;
-        align-items: center;
-    }
-
-    .copyright {
-        position: relative;
-        width: 100%;
-        padding-left: 30px;
-        overflow: hidden;
-        padding-top: 14px;
     }
 }
