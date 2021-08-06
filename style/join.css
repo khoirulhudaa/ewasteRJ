@@ -94,6 +94,173 @@ body {
     color: rgb(16, 163, 3);
 }
 
+.hero-about {
+    position: relative;
+    padding: 186px 0 51px 96px;
+    margin-top: -104px;
+    left: 0;
+    width: 100vw;
+    height: max-content;
+    display: flex;
+    /* background-image: url('../img/hero.svg'); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.hero-right img {
+    width: 70%;
+}
+
+.hero-left {
+    text-align: left;
+    width: 50%;
+}
+
+.hero-right {
+    width: 50%;
+    padding-left: 50px;
+}
+
+.hero-about p {
+    font-size: 17px;
+}
+
+.title-about {
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 30px;
+    left: 0;
+    margin-left: 0px;
+}
+
+.btn_masuk3 {
+    color: #1E272E;
+    margin-right: 24px;
+    display: none;
+    outline: none;
+    border: none;
+}
+
+.hero-about h1 {
+    margin-left: -30px;
+}
+
+.form-join {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    height: max-content;
+    padding-bottom: 100px;
+}
+
+.wrap-fr {
+    width: 100vw;
+    margin-left: 850px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.child-fr {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 14px;
+    margin-bottom: 10px;
+}
+
+.child-fr .input {
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 4px;
+    padding: 12px;
+    width: 40%;
+    font-size: 18px;
+}
+
+.btn-join {
+    position: relative;
+    border: none;
+    outline: none;
+    width: 140px;
+    margin-left: -95px;
+    color: white;
+    transform: translate(-50%, -50%);
+    margin-top: 30px;
+    margin-left: 35%;
+    right: 0;
+    font-weight: 500;
+    background-color: rgb(16, 163, 3);
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 9px 14px;
+}
+
+.foto {
+    border: 1px solid rgb(0, 196, 26);
+    border-radius: 4px;
+    padding: 12px;
+    border-radius: 10px;
+    width: 150px;
+    color: rgb(70, 255, 95);;
+    font-size: 18px;
+}
+
+h1::before {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 5px;
+    background-color: rgb(16, 163, 3);
+    bottom: -5px;
+}
+
+.btn_daftar3 {
+    color: white;
+    display: none;
+    background-color: #00B294;
+    outline: none;
+    border: none;
+}
+
+.green {
+    color: rgb(16, 163, 3);
+}
+
+.title-about h4 {
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.title-about h1 {
+    position: relative;
+    font-weight: bold;
+    font-size: 54px;
+}
+
+.fl1 {
+    position: absolute;
+    margin-top: -110px;
+}
+
+.fl2 {
+    position: absolute;
+    right: 0;
+    margin-top: -310px;
+    transform: rotate(180deg);
+}
+
 .footer {
     width: 100vw;
     height: max-content;
@@ -279,11 +446,177 @@ body {
         margin-right: auto;
     }
 
+    .logo-footer img {
+        background-color: #fff;
+        padding: 10px;
+        transform: scale(0.7);
+    }
+
+    .logo-footer, .content-footer, .sosmed {
+        text-align: center;
+    }
+
     .copyright {
         position: relative;
         width: 100%;
         padding-left: 30px;
         overflow: hidden;
         padding-top: 14px;
+    }
+        
+    .hero-about {
+        position: relative;
+        padding: 156px 0 51px 20px;
+        margin-top: -104px;
+        left: 0;
+        width: 100vw;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        /* background-image: url('../img/hero.svg'); */
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 1;
+    }
+
+    .hero-right img {
+        width: 70%;
+    }
+
+    .hero-left {
+        text-align: left;
+        width: 100%;
+    }
+
+    .hero-right {
+        width: 100%;
+        padding-left: 50px;
+    }
+
+    .hero-about p {
+        font-size: 17px;
+        width: 95%;
+    }
+
+    .title-about {
+        padding-left: 30px;
+        position: relative;
+        margin-bottom: 30px;
+        left: 0;
+        margin-left: 0px;
+    }
+
+    .btn_masuk3 {
+        color: #1E272E;
+        margin-right: 24px;
+        display: none;
+        outline: none;
+        border: none;
+    }
+
+    .hero-about h1 {
+        margin-left: -35px;
+        width: 80%;
+    }
+
+    .form-join {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        margin-top: 70px;
+        height: max-content;
+        padding-bottom: 100px;
+    }
+
+    .wrap-fr {
+        width: 100vw;
+        margin-left: 30px;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .child-fr {
+        display: flex;
+        width: 100%;
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    label {
+        font-weight: bold;
+        margin-top: 14px;
+        margin-bottom: 10px;
+    }
+
+    .child-fr .input {
+        border: 1px solid rgb(189, 189, 189);
+        border-radius: 4px;
+        padding: 12px;
+        width: 91%;
+        font-size: 18px;
+    }
+
+    .btn-join {
+        position: relative;
+        border: none;
+        outline: none;
+        width: 140px;
+        color: white;
+        transform: translate(-50%, -50%);
+        margin-top: 70px;
+        margin-left: 70px;
+        left: 0;
+        font-weight: 500;
+        background-color: rgb(16, 163, 3);
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 18px;
+        padding: 9px 14px;
+    }
+
+    .foto {
+        border: 1px solid rgb(0, 196, 26);
+        border-radius: 4px;
+        padding: 12px;
+        margin-top: 20px;
+        border-radius: 6px;
+        width: 90%;
+        color: rgb(70, 255, 95);;
+        font-size: 18px;
+    }
+
+    h1::before {
+        position: absolute;
+        content: '';
+        width: 100px;
+        height: 5px;
+        background-color: rgb(16, 163, 3);
+        bottom: -5px;
+    }
+
+    .title-about h1 {
+        position: relative;
+        font-weight: bold;
+        width: 100vw;
+        font-size: 40px;
+    }
+        
+    .fl1 {
+        position: absolute;
+        margin-top: -200px;
+        width: 200px;
+    }
+
+    .fl2 {
+        position: absolute;
+        right: 0;
+        margin-top: -170px;
+        transform: rotate(180deg);
+        width: 200px;
     }
 }
