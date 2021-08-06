@@ -105,18 +105,20 @@ body {
 }
 
 form {
-    width: 100%;
+    position: relative;
+    width: 100vw;
     margin-top: 110px;
+    margin-left: 240px;
 }
 
-.fr2, .fr3, .fr4, .fr5, .fr6, .fr7, .fr8, .fr9, .fr10 {
+.fre2, .fre3, .fre4, .fre5, .fre6, .fre7, .fre8, .fre9, .fre10 {
     margin: 0px 0 40px 0;
     width: 100vw;
     display: flex;
     flex-direction: column;
 }
 
-.fr3, .fr4, .fr5, .fr6, .fr7, .fr8, .fr9, .fr10, .fr11{
+.fre3, .fre4, .fre5, .fre6, .fre7, .fre8, .fre9, .fre10, .fre11{
     margin: 0px 0 40px 0;
     width: 75vw;
     padding-left: 70px;
@@ -137,13 +139,12 @@ textarea {
 }
 
 .wrap-check {
-
     margin-bottom: 30px;
     display: flex;
     padding-left: 30px;
 }
 
-.fr11 input {
+.fre11 input {
     margin-right: 10px;
 }
 
@@ -179,36 +180,36 @@ textarea {
     border: 1px solid rgb(102, 102, 102);
 }
 
-.fr {
+.fre {
     margin-bottom: 30px;
 }
 
-.formulir .fr1 {
-    width: 100%;
+.formulir .fre1 {
+    width: 85%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
-.formulir .fr2 {
+.formulir .fre2 {
     width: 80%;
     padding-left: 70px;
     display: flex;
     justify-content: left;
 }
 
-.fr1 input {
+.fre1 input {
     border-radius: 10px;
     width: 400px;
-    border: 2xp solid rgb(201, 201, 201);
+    border: 1px solid rgb(145, 145, 145);
     color: black;
     font-weight: 500;
     padding: 10px;
 }
 
-.fr2 select {
+.fre2 select {
     border-radius: 10px;
-    width: 400px;
+    width: 60%;
     border: 2xp solid rgb(201, 201, 201);
     color: black;
     font-weight: 500;
@@ -392,7 +393,7 @@ textarea {
         width: 80vw;
     }
 
-    .formulir .fr2 {
+    .formulir .fre2 {
         width: 100vw;
         padding-left: 0px;
         display: flex;
@@ -402,27 +403,19 @@ textarea {
     
     form {
         width: 100vw;
+        margin-left: 60px;
         margin-top: 60px;
     }
 
-    .fr {
-        display: flex;
-        justify-content: center;
-        align-items: c
-        ;
-    }
-    
-    .fr2, .fr3, .fr4, .fr5, .fr6, .fr7, .fr8, .fr9, .fr10 {
-        margin: 0px 0 40px 0;
-        width: 100vw;
+    .fre {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
     }
     
-    .fr3, .fr4, .fr5, .fr6, .fr7, .fr8, .fr9, .fr10, .fr11 {
+    .fre2, .fre3, .fre4, .fre5, .fre6, .fre7, .fre8, .fre9, .fre10, .fre11 {
         margin: 0px 0 40px 0;
+        margin-left: -30px;
         width: 100vw;
         padding-left: 0px;
         display: flex;
@@ -442,11 +435,11 @@ textarea {
         padding: 12px;
     }
 
-    .fr1 {
+    .fre1 {
         flex-wrap: wrap;
     }
 
-    .fr11 {
+    .fre11 {
         padding-left: 2px;
     }
     
@@ -461,7 +454,7 @@ textarea {
         align-items: center;
     }
 
-    .fr11 label {
+    .fre11 label {
         margin-left: 20px;
     }
 
@@ -477,11 +470,11 @@ textarea {
         right: -100px;
     }
 
-    .fr input {
+    .fre input {
         width: 90vw;
     }
 
-    .fr select {
+    .fre select {
         width: 90vw;
     }
 
@@ -501,11 +494,11 @@ textarea {
         font-weight: bold;
     }
 
-    .fr1 input {
+    .fre1 input {
         margin-bottom: 20px;
     }
     
-    .fr11 input {
+    .fre11 input {
         margin-right: 10px;
     }
     
