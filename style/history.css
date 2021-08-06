@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+
+h1, h2, h3 {
+    font-family: 'Spartan', sans-serif;
+}
+
+h4, h5, h6, small, p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+body {
+    padding: 0;
+    overflow-x: scroll;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(56, 56, 56);
+}
+
+.green {
+    color: rgb(16, 163, 3);
+}
+
+.navbar {
+    width: 100vw;
+    max-height: 104px;
+    padding: 45px 95px 51px 97px;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar button {
+    width: 119px;
+    cursor: pointer;
+    height: 48px;
+    border-radius: 100px;
+    text-align: center;
+    font-weight: 500;
+    border: none;
+    outline: none;
+}
+
+.navbar ul {
+    margin-top: 30px;
+    margin-left: -10px;
+}
+
+#btnNavs {
+    width: 28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_masuk {
+    color: #1E272E;
+    margin-right: 24px;
+    outline: none;
+    border: none;
+}
+
+.btn_daftar {
+    color: white;
+    background-color: #00B294;
+    outline: none;
+    border: none;
+}
+
+.btn_masuk2 {
+    color: #1E272E;
+    margin-right: 24px;
+    outline: none;
+    display: none;
+    border: none;
+}
+
+.btn_daftar2 {
+    color: white;
+    background-color: #00B294;
+    outline: none;
+    display: none;
+    border: none;
+}
+
+
+.footer {
+    width: 100vw;
+    height: max-content;
+    padding-top: 50px;
+    padding-bottom: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(16, 163, 3);
+    color: white;
+}
+
+.logo-footer img {
+    background-color: #fff;
+    padding: 10px;
+    transform: scale(0.9);
+}
+
+.logo-footer, .content-footer, .sosmed {
+    text-align: center;
+}
+
+.content-footer p {
+    align-items: center;
+    width: 30%;
+    margin-top: 14px;
+    padding-bottom: 14px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sosmed {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 18px;
+    border-bottom: 2px solid rgba(231, 231, 231, 0.671);
+}
+
+.copyright {
+    position: relative;
+    width: 90%;
+    padding-left: 70px;
+    overflow: hidden;
+    padding-top: 14px;
+}
+
+.history {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.bg {
+    border-radius: 400px;
+    width: 250px;
+    height: 250px;
+    background-color: chartreuse;
+}
+
+.list-history {
+    width: 100vw;
+    position: relative;
+    padding-bottom: 60px;
+}
+
+.list-history h2 {
+    font-weight: bold;
+    margin-left: 100px;
+}
+
+table {
+    position: relative;
+    width: 80%;
+    height: max-content;
+    margin-top: 0px;
+}
+
+tbody tr {
+    position: relative;
+    margin-top: 20px;
+}
+
+.btn-detail {
+    position: relative;
+    background-color: chartreuse;
+    border: none;
+    outline: none;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    color: white;
+    height: 40px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-detail p {
+    position: relative;
+    margin-top: 15px;
+}
+
+tr {
+    margin-bottom: 90px;
+    height: 60px;
+}
+
+table a {
+    text-decoration: none;
+}
+
+thead th {
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgb(145, 145, 145);
+}
+
+.btn-history {
+    border: 2px solid rgb(20, 236, 0);
+    outline: none;
+    border-radius: 4px;
+    background-color: transparent;
+    color: rgb(0, 248, 83);
+    font-size: 18px;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+.history-img {
+    margin-left: 180px;
+}
+
+.history-content {
+    padding-left: 30px;
+}
+
+.history-content p {
+    width: 80%;
+}
+
+.history h2 {
+    font-weight: bold;
+}
+
+.green {
+    color: rgb(16, 163, 3);
+}
+
+@media screen and (max-width: 567px) {
+    .navbar {
+        width: 100vw;
+        max-height: max-content;
+        overflow: hidden;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 1px;
+        padding-right: 3px;
+        position: absolute;
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(10px);
+        z-index: 9999;
+        justify-content: space-between;
+        align-items: none;
+    }
+    
+    .navbar button {
+        width: 119px;
+        cursor: pointer;
+        height: 48px;
+        border-radius: 100px;
+        text-align: center;
+        font-weight: 500;
+        border: none;
+        outline: none;
+    }
+
+    .btn_masuk {
+        display: none;
+    }
+
+    .navbar a {
+        text-decoration: none;
+    }
+
+    .btn_daftar {
+        display: none;
+    }
+
+    .btn_masuk2 {
+        color: #1E272E;
+        margin-right: 24px;
+        outline: none;
+        border: none;
+        margin-top: 20px;
+        display: inline;
+    }
+    
+    .navbar img {
+        width: 60%;
+    }
+    
+    .btn_daftar2 {
+        color: white;
+        background-color: #00B294;
+        outline: none;
+        border: none;
+        margin-top: 20px;
+        display: inline;
+    }
+    
+    .navbar ul {
+        margin-top: 20px;
+        color: white;
+        margin-left: 10px;
+    }
+
+    #btnNavs {
+        display: none;
+    }
+
+    .navbar-toggler {
+        z-index: 33;
+    }
+    
+    .btn_masuk {
+        color: #1E272E;
+        margin-right: 24px;
+        outline: none;
+        border: none;
+    }
+
+    .navbar-toggler {
+        position: relative;
+    }
+
+    button:active {
+        border: none;
+        outline: none;
+    }
+
+    .navbar button {
+        outline: none;
+        border: none;
+    }
+
+    button:focus {
+        outline: none;
+    }
+    
+    .btn_daftar {
+        color: white;
+        background-color: #00B294;
+        outline: none;
+        border: none;
+    }
+    
+    .footer {
+        width: 100vw;
+        height: max-content;
+        padding-top: 50px;
+        padding-bottom: 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgb(16, 163, 3);
+        color: white;
+    }
+
+    .logo-footer img {
+        background-color: #fff;
+        padding: 10px;
+        transform: scale(0.7);
+    }
+
+    .logo-footer, .content-footer, .sosmed {
+        text-align: center;
+    }
+
+    .content-footer p {
+        align-items: center;
+        width: 90%;
+        margin-top: 14px;
+        font-size: 16px;
+        padding-bottom: 14px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .sosmed {
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 18px;
+        border-bottom: 2px solid rgba(231, 231, 231, 0.671);
+    }
+
+    .copyright {
+        position: relative;
+        width: 100%;
+        padding-left: 30px;
+        overflow: hidden;
+        padding-top: 14px;
+    }
+
+    .history {
+        padding-top: 40px;
+        flex-wrap: wrap;
+        height: max-content;
+        overflow: hidden;
+    }
+
+    .history-img {
+        margin-left: 0px;
+    }
+    
+    .history-content {
+        padding-top: 30px;
+        text-align: center;
+        padding-left: 0px;
+    }
+    
+    .history-content p {
+        width: 100%;
+    }
+
+    .btn-history {
+    }
+    
+    .history h2 {
+        font-weight: bold;
+    }
+
+    .list-history {
+        padding-top: 80px;
+        padding-left: 10px;
+    }
+
+    .wrap-table {
+        width: 90vw;
+        overflow-x: auto;
+    }
+
+    .list-history h2 {
+        margin-left: 20px;
+    }
+
+    table {
+        width: 200vw;
+    }
+}

@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+
+h1, h2, h3 {
+    font-family: 'Spartan', sans-serif;
+}
+
+h4, h5, h6, small, p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+body {
+    padding: 0;
+    overflow-x: scroll;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(56, 56, 56);
+}
+
+.navbar {
+    width: 100vw;
+    max-height: 104px;
+    padding: 45px 95px 51px 97px;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar button {
+    width: 119px;
+    cursor: pointer;
+    height: 48px;
+    border-radius: 100px;
+    text-align: center;
+    font-weight: 500;
+    border: none;
+    outline: none;
+}
+
+.navbar ul {
+    margin-top: 30px;
+    margin-left: -10px;
+}
+
+#btnNavs {
+    width: 28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_masuk {
+    color: #1E272E;
+    margin-right: 24px;
+    outline: none;
+    border: none;
+}
+
+.btn_daftar {
+    color: white;
+    background-color: #00B294;
+    outline: none;
+    border: none;
+}
+
+.btn_masuk2 {
+    color: #1E272E;
+    margin-right: 24px;
+    outline: none;
+    display: none;
+    border: none;
+}
+
+.btn_daftar2 {
+    color: white;
+    background-color: #00B294;
+    outline: none;
+    display: none;
+    border: none;
+}
+
+.navbar ul {
+    position: relative;
+    transform: translate(-50%, -50%);
+    left: 50%;
+}
+
+.green {
+    color: rgb(16, 163, 3);
+}
+
+.footer {
+    width: 100vw;
+    height: max-content;
+    padding-top: 50px;
+    padding-bottom: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(16, 163, 3);
+    color: white;
+}
+
+.logo-footer img {
+    background-color: #fff;
+    padding: 10px;
+    transform: scale(0.9);
+}
+
+.logo-footer, .content-footer, .sosmed {
+    text-align: center;
+}
+
+.content-footer p {
+    align-items: center;
+    width: 30%;
+    margin-top: 14px;
+    padding-bottom: 14px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sosmed {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 18px;
+    border-bottom: 2px solid rgba(231, 231, 231, 0.671);
+}
+
+.copyright {
+    position: relative;
+    width: 90%;
+    padding-left: 70px;
+    overflow: hidden;
+    padding-top: 14px;
+}
+
+.title {
+    width: 100vw;
+    margin: 30px 0 50px 0;
+    text-align: center;
+    display: flex;
+    font-size: 17px;
+    justify-content: center;
+    align-items: center;
+}
+
+.pp {
+    width: 100vw;
+    display: flex;
+    margin-left: 240px;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.btn-edit {
+    border: none;
+    outline: none;
+    background-color: rgb(13, 89, 255);
+    width: 130px;
+    margin-left: 40px;
+    height: max-content;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.form-profile {
+    width: 100vw;
+    position: relative;
+    margin-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-send {
+    border-radius: 4px;
+    background-color: rgb(16, 163, 3);
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 8px;
+    width: 130px;
+    margin-top: 30px;
+    margin-left: 73%;
+    outline: none;
+    cursor: pointer;
+}
+
+.wrap-fr {
+    position: relative;
+    left: -20px;
+    width: 80vw;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.child-fr {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 14px;
+    margin-bottom: 10px;
+}
+
+.form-profile input {
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 4px;
+    padding: 12px;
+    width: 80%;
+    font-size: 18px;
+}
+
+.form-profile textarea {
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 4px;
+    padding: 12px;
+    width: 80%;
+    height: 140px;
+    font-size: 18px;
+}
+
+.bg {
+    border-radius: 400px;
+    width: 200px;
+    height: 200px;
+    background-color: chartreuse;
+}
+
+.profile h1 {
+    font-size: 38px;
+    margin-left: auto;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    margin-right: auto;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 567px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    * {
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        width: 100vw;
+        max-height: max-content;
+        overflow: hidden;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 1px;
+        padding-right: 3px;
+        position: absolute;
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(10px);
+        z-index: 9999;
+        justify-content: space-between;
+        align-items: none;
+    }
+    
+    .navbar button {
+        width: 119px;
+        cursor: pointer;
+        height: 48px;
+        border-radius: 100px;
+        text-align: center;
+        font-weight: 500;
+        border: none;
+        outline: none;
+    }
+
+    .btn_masuk {
+        display: none;
+    }
+
+    .navbar a {
+        text-decoration: none;
+    }
+
+    .btn_daftar {
+        display: none;
+    }
+
+    .btn_masuk2 {
+        color: #1E272E;
+        margin-right: 24px;
+        outline: none;
+        border: none;
+        margin-top: 20px;
+        display: inline;
+    }
+    
+    .navbar img {
+        width: 60%;
+    }
+    
+    .btn_daftar2 {
+        color: white;
+        background-color: #00B294;
+        outline: none;
+        border: none;
+        margin-top: 20px;
+        display: inline;
+    }
+    
+    .navbar ul {
+        margin-top: 180px;
+        color: white;
+        margin-left: 10px;
+    }
+
+    #btnNavs {
+        display: none;
+    }
+
+    .navbar-toggler {
+        z-index: 33;
+    }
+    
+    .btn_masuk {
+        color: #1E272E;
+        margin-right: 24px;
+        outline: none;
+        border: none;
+    }
+
+    .navbar-toggler {
+        position: relative;
+    }
+
+    button:active {
+        border: none;
+        outline: none;
+    }
+
+    .navbar button {
+        outline: none;
+        border: none;
+    }
+
+    button:focus {
+        outline: none;
+    }
+    
+    .btn_daftar {
+        color: white;
+        background-color: #00B294;
+        outline: none;
+        border: none;
+    }
+    
+    .footer {
+        width: 100vw;
+        height: max-content;
+        padding-top: 50px;
+        padding-bottom: 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgb(16, 163, 3);
+        color: white;
+    }
+
+    .logo-footer img {
+        background-color: #fff;
+        padding: 10px;
+        transform: scale(0.7);
+    }
+
+    .logo-footer, .content-footer, .sosmed {
+        text-align: center;
+    }
+
+    .content-footer p {
+        align-items: center;
+        width: 90%;
+        margin-top: 14px;
+        font-size: 16px;
+        padding-bottom: 14px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+        
+    .form-profile input {
+        border: 1px solid rgb(189, 189, 189);
+        border-radius: 4px;
+        padding: 12px;
+        width: 100%;
+        font-size: 18px;
+    }
+
+    form {
+        width: 100vw;
+        overflow-x: hidden;
+        margin-left: -18px;
+    }
+
+    .form-profile textarea {
+        border: 1px solid rgb(189, 189, 189);
+        border-radius: 4px;
+        padding: 12px;
+        width: 100%;
+        height: 140px;
+        font-size: 18px;
+    }
+
+    .title {
+        width: 100vw;
+        margin: 10px 0 40px 0;
+        text-align: center;
+        display: flex;
+        font-size: 17px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bg {
+        margin-left: -70px;
+        margin-bottom: 20px;
+    }
+
+    .btn-edit {
+        border: none;
+        outline: none;
+        background-color: rgb(13, 89, 255);
+        width: 130px;
+        margin-left: -60px;
+        height: max-content;
+        color: white;
+        padding: 10px;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    .pp {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        margin-bottom: 40px;
+        align-items: center;
+    }
+
+    .sosmed {
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 18px;
+        border-bottom: 2px solid rgba(231, 231, 231, 0.671);
+    }
+
+    .btn-send {
+        border-radius: 4px;
+        background-color: rgb(16, 163, 3);
+        border: none;
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
+        padding: 8px;
+        width: 130px;
+        margin-top: 30px;
+        margin-left: 53px;
+        outline: none;
+        cursor: pointer;
+    }
+
+    .pp {
+        width: 100vw;
+        display: flex;
+        margin-left: 30px;
+        margin-bottom: 40px;
+        align-items: center;
+    }
+
+    .copyright {
+        position: relative;
+        width: 100%;
+        padding-left: 30px;
+        overflow: hidden;
+        padding-top: 14px;
+    }
+}

@@ -215,11 +215,15 @@ textarea {
     padding: 10px;
 }
 
+.formulir {
+    position: relative;
+    height: max-content;
+    width: 100vw;
+}
+
 .formulir h1 {
     font-size: 46px;
-    margin-left: auto;
     margin-top: 70px;
-    margin-right: auto;
     font-weight: bold;
 }
 
