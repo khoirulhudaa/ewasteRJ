@@ -252,9 +252,9 @@ textarea {
     justify-content: left;
 }
 
-.fre1 input {
+.fre4 input {
     border-radius: 10px;
-    width: 400px;
+    width: 100%;
     border: 1px solid rgb(145, 145, 145);
     color: black;
     font-weight: 500;
@@ -285,10 +285,6 @@ textarea {
 
 @media screen and (max-width: 567px) {
     body {
-        overflow-x: hidden;
-    }
-    
-    * {
         overflow-x: hidden;
     }
 
