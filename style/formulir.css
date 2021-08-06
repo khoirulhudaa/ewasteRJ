@@ -175,6 +175,7 @@ textarea {
 
 .lain {
     width: 55%;
+    padding-left: 10px;
     height: 40px;
     border-radius: 6px;
     border: 1px solid rgb(102, 102, 102);
@@ -544,6 +545,7 @@ textarea {
         margin-left: 15px;
         align-items: center;
         height: 40px;
+        padding-left: 10px;
         border-radius: 6px;
         border: 1px solid rgb(102, 102, 102);
     }
