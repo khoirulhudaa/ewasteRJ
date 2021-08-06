@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EwasteRJ - Community</title>
+    <link rel="stylesheet" href="./style/formulir.css">
+    <link rel="stylesheet" href="./bs/css/bootstrap.min.css">
+    <style>
+        .navs {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid" style="display: flex;justify-content: center;align-items: center;">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.svg" alt="a">
+            </a>
+            <button class="navbar-toggler" id="toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" id="toggler2"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="width: 43%;">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="./about.html">About</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="./location.html">Locations</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="./articles.html">Our activity</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="./articles.html">Lates news</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./login.html"><button class="btn_masuk2" type="submit">Sign in</button></a>
+                </li>
+                <li class="nav-item">
+                    <a href="./register.html"><button class="btn_daftar2" type="submit">Sign up</button></a>
+                </li>
+            </ul>
+        </div>
+            <div class="collapse navbar-collapse navs" id="btnNavs">
+                <form class="d-flex">
+                    <a href="./login.html"><button class="btn_masuk" type="submit">Sign in</button></a>
+                    <a href="./register.html"><button class="btn_daftar" type="submit">Sign up</button></a>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <section class="formulir">
+        <h1>Drop your <span class="green">ewaste</span></h1>
+        <form>
+            <div class="fr fr1">
+                <div>
+                    <input type="date" class="date" placeholder="Pilih tanggal">
+                </div>
+                <div>
+                    <input type="text" placeholder="3 kilogram">
+                </div>
+            </div>
+            <div class="fr fr2">
+                <label for="d">Pilih lokasi ewaste yang dituju</label>
+                <select name="lokasi" id="d">
+                    <option value="gudang-ewasterj">Gudang ewasteRJ</option>
+                    <option value="b">b</option>
+                    <option value="c">c</option>
+                </select>
+            </div>
+            <div class="fr fr3">
+                <label for="rt">
+                    Tuliskan jumlah dan jenis sampah elektronik peralatan rumah tangga (Househould application) yang
+                    anda kirimkan
+                </label>
+                <textarea type="text" id="rt" placeholder="1 setrika dan 1 blender"></textarea>
+            </div>
+            <div class="fr fr4">
+                <label for="info">
+                    Tuliskan jumlah dan jenis sampah elektronik peralatan Informasi dan teknology komunikasi (ICT Equipment)
+                    yang akan anda kirimkan
+                </label>
+                <textarea type="text" id="info" placeholder="2 hp, 2 charger, dan 3 earphone"></textarea>
+            </div>
+            <div class="fr fr5">
+                <label for="consumer">
+                    Tuliskan jumlah dan jenis sampah elektronik (Consumer Equipment) yang akan anda kirimkan
+                </label>
+                <textarea type="text" id="consumer"placeholder="1 kamera dan 1 radio" ></textarea>
+            </div>
+            <div class="fr fr6">
+                <label for="cahaya">
+                    Tuliskan jumlah dan jenis sampah elektronik perlengkapan pencahayaan (Lighting Equipment)
+                    yang akan anda kirimkan
+                </label>
+                <textarea type="text" id="cahaya" placeholder="1 bola lampu LED"></textarea>
+            </div>
+            <div class="fr fr7">
+                <label for="tric">
+                    Tuliskan jumlah dan jenis sampah elektronik peralatan listrik (Electrical Equipment/Non Batteries)
+                    yang akan anda kirimkan
+                </label>
+                <textarea type="text" id="tric" class="2 kabel listrik dan 1 ekstension card"></textarea>
+            </div>
+            <div class="fr fr8">
+                <label for="tric2">
+                    Tuliskan jumlah dan jenis sampah elektronik peralatan listrik (Electrical Equipment/Batteries) yang akan anda kirimkan
+                </label>
+                <textarea type="text" id="tric2" placeholder="5 baterai"></textarea>
+            </div>
+            <div class="fr fr9">
+                <label for="troc2">
+                    Tuliskan jumlah sampah elektronik mainan dan peralatan olahraga elektronik (Electronic Toys and Sports Equipment)
+                    yang akan anda kirimkan
+                </label>
+                <textarea type="text" id="troc2" placeholder="2 kabel dan 1 extension card"></textarea>
+            </div>
+            <div class="fr fr10">
+                <label for="tric3">
+                    Jika menyebutkan lain-lain, silakan tuliskan sampah elektronik uyang akan anda kirimkan (Misal: jam, printer, scanner, dll)
+                </label>
+                <textarea type="text" id="tric3" placeholder="Jam, Scanner, Printer, dll"></textarea>
+            </div>
+            <div class="fr fr11">
+                <label for="jns">Jenis pengiriman sampah elektronik</label>
+                <div class="wrap-check">
+                    <div class="check">
+                        <input type="checkbox" class="ckc" id="s"><label for="s">Grab sed/ Go send</label>
+                        <input type="checkbox" class="ckc" id="s2"><label for="s2">J&T</label>
+                        <input type="checkbox" class="ckc" id="s3"><label for="s3">JNE</label>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" class="ckc" id="s"><label for="s">Grab sed/ Go send</label>
+                        <input type="checkbox" class="ckc" id="s2"><label for="s2">J&T</label>
+                        <input type="checkbox" class="ckc" id="s3"><label for="s3">JNE</label>
+                    </div>
+                </div>
+                <label for="lain">Lainnya</label>
+                <input type="text" id="lain" class="lain">
+            </div>
+            <div class="btn">
+                <button class="btn-formulir">Submit</button>
+            </div>
+        </form>
+    </section>
+    
+    <section class="footer">
+        <div class="logo-footer">
+            <img src="./img/logo2.svg" alt="">
+        </div>
+        <div class="content-footer">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing 
+                elit. Repudiandae facilis dolor inventore.
+                Lorem ipsum dolor, sit amet consectetur adipisicing 
+            </p>
+        </div>
+        <div class="sosmed">
+            <img src="./img/sosmed.svg" alt="">
+        </div>
+        <div class="copyright">
+            copyright 2021 | Ewaste-Community
+        </div>
+    </section>
+    
+    <script src="./bs/js/bootstrap.min.js"></script>
+    <script>
+        document.querySelector('.navbar-toggler').addEventListener('click', () => {
+            document.querySelector('.btn_masuk').style.display = 'inline'
+            document.querySelector('.btn_daftar').style.display = 'flex'
+        })
+    </script>
+</body>
+</html>

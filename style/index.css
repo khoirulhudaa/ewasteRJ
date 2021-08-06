@@ -90,13 +90,33 @@ body {
     border: none;
 }
 
+.kotak {
+    position: relative;
+    width: 100vw;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+}
+
+.kotak1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.kotak2 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    bottom: -20px;
+    left: 50%;
+}
+
 .hero {
     position: relative;
     padding: 186px 0 51px 96px;
     margin-top: -104px;
     left: 0;
     width: 100vw;
-    height: 600px;
+    height: 650px;
     display: flex;
     flex-direction: column;
     /* background-image: url('../img/hero.svg'); */
@@ -145,7 +165,7 @@ body {
     left: 0;
     top: 0;
     width: 60%;
-    height: 600px;
+    height: 650px;
     background: linear-gradient(90deg, #000000 -17.18%, rgba(0, 0, 0, 0.660654) 49.05%, rgba(0, 0, 0, 0) 100%);
 }
 
@@ -209,7 +229,6 @@ body {
 .count {
     position: relative;
     display: flex;
-    margin-top: 200px;
     width: 100vw;
     height: 280px;
     padding-top: 66;
@@ -266,9 +285,25 @@ body {
 }
 
 .card-drop h2 {
+    position: relative;
+    margin-top: 35px;
     font-size: 23px;
-    margin-top: 10px;
     font-weight: bold;
+}
+
+.card-drop h2::before {
+    position: absolute;
+    content: '';
+    top: -20px;
+    left: 0;
+    width: 100px;
+    height: 6px;
+    background-color: rgb(16, 163, 3);
+}
+
+.card-drop h4 {
+    margin: 18px 0;
+    font-size: 15px;
 }
 
 .title-drop h1 {
@@ -288,9 +323,9 @@ body {
 .card-drop {
     width: 270px;
     overflow: hidden;
-    height: 340px;
+    height: max-content;
     border-radius: 10px;
-    padding: 16px;
+    padding: 26px 16px;
     text-align: left;
     margin: 32px 40px;
     transition: 0.4s;
@@ -312,8 +347,10 @@ body {
     font-weight: 500;
     background-color: rgb(16, 163, 3);
     cursor: pointer;
-    border-radius: 10px;
+    margin-top: 10px;
+    border-radius: 6px;
     font-size: 20px;
+    width: 100%;
     padding: 10px;
 }
 
@@ -1737,6 +1774,15 @@ textarea {
     .kontak-right p {
         width: 100%;
         font-weight: bold;
+    }
+
+    form
+
+    form .fr1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
 
     .footer {
