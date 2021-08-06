@@ -210,7 +210,8 @@ textarea {
 .fre2 select {
     border-radius: 10px;
     width: 60%;
-    border: 2xp solid rgb(201, 201, 201);
+    border: 1px solid rgb(95, 95, 95);
+    background-color: transparent;
     color: black;
     font-weight: 500;
     padding: 10px;
@@ -476,6 +477,16 @@ textarea {
 
     .fre select {
         width: 90vw;
+    }
+    
+    .fre2 select {
+        border-radius: 10px;
+        width: 60%;
+        border: 1px solid rgb(95, 95, 95);
+        background-color: transparent;
+        color: black;
+        font-weight: 500;
+        padding: 10px;
     }
 
     textarea {
