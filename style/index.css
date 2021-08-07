@@ -1111,6 +1111,7 @@ textarea {
         background-position: center;
         background-size: cover;
         filter: brightness(90%);
+        object-fit: cover;
         background-color: rgb(109, 109, 109);
         background-repeat: no-repeat;
         z-index: 1;
