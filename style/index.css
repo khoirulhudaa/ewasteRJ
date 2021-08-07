@@ -1194,6 +1194,14 @@ textarea {
         border-right: none;
         border-bottom: 2px solid white;
     }
+
+    .count h1 {
+        color: white;
+    }
+
+    .title2 {
+        color: white;
+    }
     
     .title2 {
         font-size: 20px;
