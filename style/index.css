@@ -1669,6 +1669,8 @@ textarea {
         margin: 32px 32px 20px 32px;
     }
 
+    .kotak2 {display: none;}
+
     .card-join h2 {
         margin-top: 18px;
         font-size: 24px;

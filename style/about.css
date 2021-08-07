@@ -512,7 +512,7 @@ body {
         
     .hero-about {
         position: relative;
-        padding: 150px 0 51px 56px;
+        padding: 150px 0 51px 20px;
         margin-top: -104px;
         left: 0;
         width: 100vw;
@@ -546,7 +546,26 @@ body {
 
     .hero-about p {
         font-size: 17px;
-        width: 85vw;
+        width: 90vw;
+    }
+
+    .left-fl {
+        width: 80px;
+    }
+
+    .right-fl {
+        bottom: 10px;
+        width: 80px;
+    }
+
+    .team-kotak1 {
+        width: 70px;
+        top: 200px;
+    }
+
+    .team-kotak2 {
+        width: 70px;
+        bottom: 30px;
     }
 
     .title-about {
