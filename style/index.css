@@ -143,6 +143,13 @@ body {
     color: white;
 }
 
+.drop-fl2 {
+    position: absolute;
+    width: 240px;
+    top: 20px;
+    right: 0;
+}
+
 .boxs p {
     width: 100%;
 }
@@ -356,9 +363,15 @@ body {
 
 .features {
     position: relative;
-    padding: 50px 0;
+    padding: 50px 0 100px 0px;
     width: 100vw;
     height: max-content;
+}
+
+.features-kotak {
+    position: absolute;
+    top: 50px;
+    right: 500px;
 }
 
 .title-features {
@@ -422,7 +435,8 @@ body {
     position: relative;
 }
 
-.card-features:nth-child(1) {
+.card-features:hover {
+    transition: 0.4s;
     box-shadow: 1px 2px 6px rgba(192, 192, 192, 0.726);
 }
 
@@ -443,10 +457,32 @@ body {
     width: 100vw;
     height: max-content;
     padding-top: 50px;
-    padding-bottom: 90px;
+    padding-bottom: 140px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.benefits-kotak {
+    position: absolute;
+    top: 0;
+    right: 70px;
+}
+
+.benefits-kotaks {
+    position: absolute;
+    bottom: 50px;
+    z-index: 1;
+    left: -10px;
+    width: 160px;
+}
+
+.benefits-kotaks2 {
+    position: absolute;
+    top: -20px;
+    z-index: 1;
+    left: 390px;
+    width: 160px;
 }
 
 .benefits-left {
@@ -459,6 +495,8 @@ body {
 
 .benefits-left img {
     width: 110%;
+    z-index: 3;
+    margin-left: 30px;
 }
 
 .benefits-right {
@@ -525,7 +563,7 @@ body {
 
 .list-benefits .img-benefits .img2 {
     border-radius: 90px;
-    background-color: rgb(57, 143, 255);
+    background-color: rgb(169, 206, 255);
     padding: 10px;
 }
 
@@ -544,7 +582,7 @@ body {
     padding: 50px 0;
     width: 100vw;
     height: max-content;
-    background-color: rgb(239, 255, 251);
+    background-color: rgba(250, 250, 250, 0.788);
 }
 
 .title-products {
@@ -594,7 +632,7 @@ body {
 
 .card-products h2 {
     margin-top: 18px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
 }
 
@@ -606,11 +644,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     position: relative;
-}
-
-.card-products:hover {
-    transition: 0.4s;
-    box-shadow: 1px 2px 6px rgba(192, 192, 192, 0.726);
 }
 
 .btn-products {
@@ -711,6 +744,7 @@ body {
 
 .card-join {
     width: 270px;
+    transition: 0.4s;
     overflow: hidden;
     height: max-content;
     padding-bottom: 10px;
@@ -740,7 +774,8 @@ body {
     position: relative;
 }
 
-.card-join:nth-child(1) {
+.card-join:hover {
+    transition: 0.4s;
     box-shadow: 1px 2px 6px rgba(192, 192, 192, 0.726);
 }
 
@@ -1201,8 +1236,16 @@ textarea {
     
     .title-drop h1 {
         position: relative;
-        color: black    ;
+        color: black;
+        font-size: 30px;
         font-weight: bold;
+    }
+
+    .drop-fl2 {
+        position: absolute;
+        width: 100px;
+        top: 0px;
+        right: -20px;
     }
     
     .list-card-drop {
@@ -1221,6 +1264,7 @@ textarea {
         overflow: hidden;
         height: max-content;
         border-radius: 10px;
+        transform: scale(0.9);
         padding: 16px;
         color: black;
         text-align: left;
@@ -1314,6 +1358,7 @@ textarea {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        transform: scale(0.9);
         border-radius: 10px;
         padding: 16px;
         margin: 32px;
@@ -1340,11 +1385,7 @@ textarea {
         margin-right: auto;
         position: relative;
     }
-    
-    .card-features:nth-child(1) {
-        box-shadow: 1px 2px 6px rgba(192, 192, 192, 0.726);
-    }
-    
+
     .btn-features {
         border: none;
         outline: none;
@@ -1397,8 +1438,19 @@ textarea {
         width: 100%;
         display: flex;
         align-items: left;
+        display: none;
         height: max-content;
         padding: 24px;
+    }
+
+    .benefits-kotak {
+        top: -20px;
+        right: 10px;
+        transform: scale(0.9);
+    }
+
+    .benefits-kotaks2, .benefits-kotaks {
+        display: none;
     }
 
     .benefits-left img {
@@ -1486,8 +1538,9 @@ textarea {
         justify-content: center;
         align-items: center;
         border-radius: 10px;
+        transform: scale(0.9);
         padding: 16px;
-        margin: 32px;
+        margin: 32px 32px 0px 32px;
     }
     
     .card-products h2 {
@@ -1505,12 +1558,7 @@ textarea {
         margin-right: auto;
         position: relative;
     }
-    
-    .card-products:hover {
-        transition: 0.4s;
-        box-shadow: 1px 2px 6px rgba(192, 192, 192, 0.726);
-    }
-    
+
     .btn-products {
         border: none;
         outline: none;
@@ -1615,9 +1663,10 @@ textarea {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        transform: scale(0.9);
         border-radius: 10px;
         padding: 16px;
-        margin: 32px;
+        margin: 32px 32px 20px 32px;
     }
 
     .card-join h2 {
@@ -1636,7 +1685,7 @@ textarea {
         position: relative;
     }
 
-    .card-join:nth-child(1) {
+    .card-join:hover(1) {
         box-shadow: 1px 2px 6px rgba(192, 192, 192, 0.726);
     }
 

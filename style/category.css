@@ -10,14 +10,11 @@ h4, h5, h6, small, p {
     font-family: 'Open Sans', sans-serif;
 }
 
+
 body {
     padding: 0;
-    overflow-x: hidden;
+    overflow-x: scroll;
     margin: 0;
-}
-
-* {
-    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -33,7 +30,7 @@ body {
     max-height: 104px;
     padding: 45px 95px 51px 97px;
     position: absolute;
-    background: white;
+    background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
     z-index: 9999;
     justify-content: center;
@@ -56,6 +53,13 @@ body {
     margin-left: -10px;
 }
 
+#btnNavs {
+    width: 28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .btn_masuk {
     color: #1E272E;
     margin-right: 24px;
@@ -70,41 +74,7 @@ body {
     border: none;
 }
 
-.hero-product {
-    position: relative;
-    width: 100vw;
-    height: max-content;
-    background-size: cover;
-}
-
-.green {
-    color: rgb(16, 163, 3);
-}
-
-.hero-product img {
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-}
-
-.list-product {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-top: 70px;
-    width: 100vw;
-    height: max-content;
-}
-
-.list-product h1 {
-    position: relative;
-    font-weight: bold;
-    padding-top: 20px;
-}
-
-.btn_masuk4 {
+.btn_masuk2 {
     color: #1E272E;
     margin-right: 24px;
     outline: none;
@@ -112,7 +82,7 @@ body {
     border: none;
 }
 
-.btn_daftar4 {
+.btn_daftar2 {
     color: white;
     background-color: #00B294;
     outline: none;
@@ -120,76 +90,14 @@ body {
     border: none;
 }
 
-.list-product h1::before {
-    position: absolute;
-    content: '';
-    margin-top: -14px;
-    left: 0;
-    width: 80px;
-    height: 6px;
-    background-color: rgb(16, 163, 3);
+.navbar ul {
+    position: relative;
+    transform: translate(-50%, -50%);
+    left: 50%;
 }
 
-.list-product .p {
-    width: 40%;
-}
-
-.products {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    flex-wrap: wrap;
-    height: max-content;
-    margin-top: 30px;
-    padding-bottom: 50px;
-}
-
-.card-product {
-    overflow: hidden;
-    width: 280px;
-    height: 400px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 8px 8px 14px 8px;
-}
-
-.card-body h3 {
-    font-size: 19px;
-    font-weight: bold;
-}
-
-.btn-product {
-    border: none;
-    outline: none;
-    color: white;
-    width: 70%;
-    margin-top: 14px;
-    font-weight: 500;
-    background-color: rgb(16, 163, 3);
-    cursor: pointer;
-    border-radius: 6px;
-    font-size: 18px;
-    padding: 6px 12px;
-}
-
-.card-product .card-head {
-    height: 70%;
-    overflow: hidden;
-}
-
-.card-head img {
-    width: 100%;
-    height: auto;
-}
-
-.card-product .card-body {
-    height: 60%;
-    width: 100%;
+.green {
+    color: rgb(16, 163, 3);
 }
 
 .footer {
@@ -241,6 +149,14 @@ body {
 
 
 @media screen and (max-width: 567px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    * {
+        overflow-x: hidden;
+    }
+
     .navbar {
         width: 100vw;
         max-height: max-content;
@@ -280,7 +196,7 @@ body {
         display: none;
     }
 
-    .btn_masuk4 {
+    .btn_masuk2 {
         color: #1E272E;
         margin-right: 24px;
         outline: none;
@@ -293,7 +209,7 @@ body {
         width: 60%;
     }
     
-    .btn_daftar4 {
+    .btn_daftar2 {
         color: white;
         background-color: #00B294;
         outline: none;
@@ -303,7 +219,7 @@ body {
     }
     
     .navbar ul {
-        margin-top: 20px;
+        margin-top: 180px;
         color: white;
         margin-left: 10px;
     }
@@ -347,129 +263,6 @@ body {
         outline: none;
         border: none;
     }
-        
-    .hero-product {
-        position: relative;
-        width: 100vw;
-        height: max-content;
-        background-size: cover; 
-    }
-
-    .green {
-        color: rgb(16, 163, 3);
-    }
-
-    .hero-product img {
-        width: 100vw;
-        height: 100%;
-    }
-
-    .list-product {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding-top: 50px;
-        width: 100vw;
-        height: max-content;
-    }
-
-    .list-product h1 {
-        position: relative;
-        font-weight: bold;
-        padding-top: 20px;
-        width: 100vw;
-    }
-
-    .btn_masuk2 {
-        color: #1E272E;
-        margin-right: 24px;
-        outline: none;
-        display: none;
-        border: none;
-    }
-
-    .btn_daftar2 {
-        color: white;
-        background-color: #00B294;
-        outline: none;
-        display: none;
-        border: none;
-    }
-
-    .list-product h1::before {
-        position: absolute;
-        content: '';
-        margin-top: -16px;
-        left: 70px;
-        width: 80px;
-        height: 6px;
-        background-color: rgb(16, 163, 3);
-    }
-
-    .list-product .p {
-        width: 90%;
-    }
-
-    .products {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100vw;
-        flex-wrap: wrap;
-        height: 1200px;
-        overflow: scroll;
-        margin-top: 30px;
-        padding-bottom: 50px;
-    }
-
-    .card-product {
-        overflow: hidden;
-        width: 280px;
-        height: 380px;
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin: 8px;
-    }
-
-    .card-body h3 {
-        font-size: 19px;
-        font-weight: bold;
-    }
-
-    .btn-product {
-        border: none;
-        outline: none;
-        color: white;
-        width: 70%;
-        margin-top: 14px;
-        font-weight: 500;
-        background-color: rgb(16, 163, 3);
-        cursor: pointer;
-        border-radius: 6px;
-        font-size: 18px;
-        padding: 6px 12px;
-    }
-
-    .card-product .card-head {
-        height: 60%;
-        overflow: hidden;
-    }
-
-    .card-head img {
-        width: 100%;
-        height: auto;
-    }
-
-    .card-product .card-body {
-        height: 60%;
-        width: 100%;
-    }
     
     .footer {
         width: 100vw;
@@ -501,21 +294,5 @@ body {
         padding-bottom: 14px;
         margin-left: auto;
         margin-right: auto;
-    }
-
-    .sosmed {
-        width: 90vw;
-        margin-left: auto;
-        margin-right: auto;
-        padding-bottom: 18px;
-        border-bottom: 2px solid rgba(231, 231, 231, 0.671);
-    }
-
-    .copyright {
-        position: relative;
-        width: 100%;
-        padding-left: 30px;
-        overflow: hidden;
-        padding-top: 14px;
     }
 }
