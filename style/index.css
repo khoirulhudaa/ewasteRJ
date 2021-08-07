@@ -1109,7 +1109,7 @@ textarea {
         flex-direction: column;
         background-image: url('../img/hero.svg');
         background-position: center;
-        background-size: cover;
+        background-size: contain;
         background-color: rgb(109, 109, 109);
         background-repeat: no-repeat;
         z-index: 1;
