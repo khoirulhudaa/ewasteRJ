@@ -421,14 +421,6 @@ body {
         outline: none;
     }
 
-    .btn_masuk2 {
-        display: inline-block;
-    }
-
-    .btn_daftar2 {
-        display: none;
-    }
-
     .articles {
         position: relative;
         display: flex;
