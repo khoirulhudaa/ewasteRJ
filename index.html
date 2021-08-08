@@ -49,10 +49,29 @@
             </ul>
         </div>
             <div class="collapse navbar-collapse navs nn" style="width: 15%;">
-                <form class="d-flex">
+
+                <!-- ketika user belum login -->
+                <!-- <form class="d-flex">
                     <a href="./login.html"><button class="btn_masuk" type="submit">Sign in</button></a>
                     <a href="./register.html"><button class="btn_daftar" type="submit">Sign up</button></a>
-                </form>
+                </form> -->
+                <!-- end belum login -->
+
+                <!-- ketika user sudah login -->
+                <div class="wrap-user">
+                    <div class="user-left">
+                        <img src="./img/img-user.svg" alt="s">
+                        <small>Soffyan tsauri</small>
+                    </div>
+                    <div class="user-right">
+                        <img src="./img/icon-user.svg" alt="s" class="icons">
+                        <div class="logout">
+                            <button class="btn-logout">Logout</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- end login -->
+
             </div>
         </div>
     </nav>
@@ -395,6 +414,23 @@
             copyright 2021 | Ewaste-Community
         </div>
     </section>
+
+    <script>
+        let v = -0;
+
+        document.querySelector('.icons').addEventListener('click', () => {
+            v = v + 1;
+            if(v % 2 == 1) {
+                document.querySelector('.logout').style.opacity = 1;
+                document.querySelector('.logout').style.marginTop = '160px';
+                document.querySelector('.logout').style.transform = `scale(1)`;
+            }else if(v % 2 == 0) {
+                document.querySelector('.logout').style.opacity = 0;
+                document.querySelector('.logout').style.marginTop = '100px';
+                document.querySelector('.logout').style.transform = `scale(0)`;
+            }
+        })
+    </script>
     
     <script src="./bs/js/bootstrap.min.js"></script>
     <script>
