@@ -1122,6 +1122,9 @@ textarea {
 
     .popup {
         width: 85vw;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     .btn-popup {
