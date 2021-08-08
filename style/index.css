@@ -1958,3 +1958,18 @@ textarea {
         left: 50%;
     }
 }
+
+
+@media screen and (min-width: 1800px) {
+    .navbar ul {
+        position: relative;
+        left: 70.5%;
+        margin-top: 40px;
+        transform: translate(-50%, -50%);
+    }
+
+    .nn {
+        position: relative;
+        left: 240px;
+    }
+}
