@@ -7,12 +7,8 @@
     <title>EwasteRJ - Community</title>
     <link rel="stylesheet" href="./style/location.css">
     <link rel="stylesheet" href="./bs/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-    crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-   crossorigin=""></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
     <style>
         .navs {
             display: none;
@@ -31,27 +27,27 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent" style="width: 43%;">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="./about.html">About</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="./location.html">Locations</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="./articles.html">Our activity</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="./articles.html">Lates news</a>
-            </li>
-            <li class="nav-item">
-                <a href="./login.html"><button class="btn_masuk2" type="submit">Sign in</button></a>
-            </li>
-            <li class="nav-item">
-                <a href="./register.html"><button class="btn_daftar2" type="submit">Sign up</button></a>
-            </li>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="./about.html">About</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="./location.html">Locations</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="./articles.html">Our activity</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="./articles.html">Lates news</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./login.html"><button class="btn_masuk2" type="submit">Sign in</button></a>
+                </li>
+                <li class="nav-item">
+                    <a href="./register.html"><button class="btn_daftar2" type="submit">Sign up</button></a>
+                </li>
             </ul>
         </div>
             <div class="collapse navbar-collapse navs" id="btnNavs">
@@ -64,7 +60,7 @@
     </nav>
 
     <section class="location">
-        <div id="mapid"></div>
+        <div id="mapid" style="width: 100vw;height: 400px;"></div>
     </section>
 
     <section class="list-product">
@@ -194,6 +190,7 @@
             center: [-6.200000,	106.816666],
             zoom: 13
         });
+    
     
         L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
             maxZoom: 18,

@@ -10,34 +10,15 @@ h4, h5, h6, small, p {
     font-family: 'Open Sans', sans-serif;
 }
 
+
 body {
     padding: 0;
-    overflow-x: hidden;
+    overflow-x: scroll;
     margin: 0;
-}
-
-* {
-    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
     display: none;
-}
-
-.btn_masuk2 {
-    color: #1E272E;
-    margin-right: 24px;
-    outline: none;
-    display: none;
-    border: none;
-}
-
-.btn_daftar2 {
-    color: white;
-    background-color: #00B294;
-    outline: none;
-    display: none;
-    border: none;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -49,7 +30,7 @@ body {
     max-height: 104px;
     padding: 45px 95px 51px 97px;
     position: absolute;
-    background: white;
+    background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
     z-index: 9999;
     justify-content: center;
@@ -72,6 +53,13 @@ body {
     margin-left: -10px;
 }
 
+#btnNavs {
+    width: 28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .btn_masuk {
     color: #1E272E;
     margin-right: 24px;
@@ -86,9 +74,20 @@ body {
     border: none;
 }
 
-#mapid { 
-    height: 440px; 
-    width: 100vw;
+.btn_masuk2 {
+    color: #1E272E;
+    margin-right: 24px;
+    outline: none;
+    display: none;
+    border: none;
+}
+
+.btn_daftar2 {
+    color: white;
+    background-color: #00B294;
+    outline: none;
+    display: none;
+    border: none;
 }
 
 .list-product {
@@ -325,7 +324,7 @@ body {
     .navbar-toggler {
         z-index: 33;
     }
-    
+
     .btn_masuk {
         color: #1E272E;
         margin-right: 24px;

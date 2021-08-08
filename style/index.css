@@ -50,7 +50,23 @@ body {
 
 .navbar ul {
     margin-top: 30px;
-    margin-left: -10px;
+    margin-left: 30px;
+}
+
+.nav-brand {
+    width: 10%;
+}
+
+.navs {
+    width: 10%;
+}
+
+.navs1 {
+    width: max-content;
+}
+
+.navbar ul li {
+    margin: 0 20px 0 24px;
 }
 
 #btnNavs {
@@ -119,7 +135,7 @@ body {
     height: 650px;
     display: flex;
     flex-direction: column;
-    background-image: url('../img/hero.svg');
+    /* background-image: url('../img/hero.svg'); */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -241,7 +257,7 @@ body {
     padding-top: 66;
     display: flex;
     text-align: center;
-    background-image: url('../img/bg_count.svg');
+    /* background-image: url('../img/bg_count.svg'); */
     background-color: lavender;
     align-items: center;
     background-size: cover;
@@ -959,7 +975,7 @@ textarea {
     padding-top: 14px;
 }
 
-@media screen and (max-width: 567px) {
+@media screen and (max-width: 767px) {
     .navbar {
         width: 100vw;
         max-height: max-content;
