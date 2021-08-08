@@ -267,7 +267,7 @@ body {
     height: 650px;
     display: flex;
     flex-direction: column;
-    /* background-image: url('../img/hero.svg'); */
+    background-image: url('../img/hero.svg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -389,7 +389,7 @@ body {
     padding-top: 66;
     display: flex;
     text-align: center;
-    /* background-image: url('../img/bg_count.svg'); */
+    background-image: url('../img/bg_count.svg');
     background-color: lavender;
     align-items: center;
     background-size: cover;
@@ -1357,7 +1357,7 @@ textarea {
         height: max-content;
         display: flex;
         flex-direction: column;
-        /* background-image: url('../img/hero.svg'); */
+        background-image: url('../img/hero.svg');
         background-position: center;
         background-size: cover;
         filter: brightness(90%);
@@ -1424,7 +1424,7 @@ textarea {
         padding-top: 66px;
         display: flex;
         text-align: center;
-        /* background-image: url('../img/bg_count.svg'); */
+        background-image: url('../img/bg_count.svg');
         background-color: lavender;
         align-items: center;
         background-size: cover;
