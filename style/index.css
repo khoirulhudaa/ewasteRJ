@@ -398,6 +398,10 @@ body {
     justify-content: center;
 }
 
+.count h1 {
+    color: white;
+}
+
 .box {
     width: 33%;
     display: flex;
