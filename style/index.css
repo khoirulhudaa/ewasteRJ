@@ -1109,14 +1109,11 @@ textarea {
 
 @media screen and (max-width: 767px) {
 
-    section {
-        overflow-x: hidden;
-    }
-    section {
-        overflow-x: hidden;
+    .kotak {
+        display: none;
     }
 
-    body {
+    body, html {
         overflow-x: hidden;
     }
 
@@ -1128,6 +1125,7 @@ textarea {
     }
 
     .btn-popup {
+        position: fixed;
         width: 70vw;
     }
         
