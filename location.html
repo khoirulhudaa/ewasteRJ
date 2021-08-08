@@ -13,6 +13,9 @@
         .navs {
             display: none;
         }
+        body {
+            overflow-x: hidden;
+        }
     </style>
 </head>
 <body>
@@ -183,6 +186,28 @@
         </div>
     </section>
 
+    <script>
+        let v = -0;
+
+        document.querySelector('.icons').addEventListener('click', () => {
+            v = v + 1;
+            if(v % 2 == 1) {
+                if(window.innerWidth >= 1000) {
+                    document.querySelector('.logout').style.opacity = 1;
+                    document.querySelector('.logout').style.marginTop = '160px';
+                    document.querySelector('.logout').style.transform = `scale(1)`;
+                }else if (window.innerWidth <= 1000) {
+                    document.querySelector('.logout').style.opacity = 1;
+                    document.querySelector('.logout').style.marginTop = '75px';
+                    document.querySelector('.logout').style.transform = `scale(1)`;
+                }
+            }else if(v % 2 == 0) {
+                document.querySelector('.logout').style.opacity = 0;
+                document.querySelector('.logout').style.marginTop = '100px';
+                document.querySelector('.logout').style.transform = `scale(0)`;
+            }
+        })
+    </script>
     <script src="./bs/js/bootstrap.min.js"></script>
     <script>
 

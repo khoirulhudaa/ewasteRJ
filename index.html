@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">       
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1" user-scalable=no>        
     <title>EwasteRJ - Community</title>
     <link rel="stylesheet" href="./style/index.css">
     <link rel="stylesheet" href="./bs/css/bootstrap.min.css">
     <style>
         .navs {
             display: none;
+        }
+        body {
+            overflow-x: hidden;
         }
     </style>
 </head>
@@ -46,9 +49,9 @@
                 <li class="nav-item">
                     <a href="./register.html"><button class="btn_daftar2" type="submit">Sign up</button></a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item"> -->
                        <!-- ketika user sudah login -->
-                <div class="wrap-user">
+                <!-- <div class="wrap-user">
                     <div class="user-left">
                         <img src="./img/img-user.svg" alt="s">
                         <small>Soffyan tsauri</small>
@@ -59,23 +62,33 @@
                             <button class="btn-logout">Logout</button>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <!-- end login -->
-                </li>
+                <!-- </li> -->
             </ul>
         </div>
-            <!-- <div class="collapse navbar-collapse navs nn" style="width: 15%;"> -->
-                
-                <!-- ketika user belum login -->
-                <!-- <form class="d-flex">
-                    <a href="./login.html"><button class="btn_masuk" type="submit">Sign in</button></a>
-                    <a href="./register.html"><button class="btn_daftar" type="submit">Sign up</button></a>
-                </form> -->
-                <!-- end belum login -->
-                <!-- </div> -->
+        <div class="collapse navbar-collapse navs nn" style="width: 15%;">
+            
+            <!-- ketika user belum login -->
+            <form class="d-flex">
+                <a href="./login.html"><button class="btn_masuk" type="submit">Sign in</button></a>
+                <a href="./register.html"><button class="btn_daftar" type="submit">Sign up</button></a>
+            </form>
+            <!-- end belum login -->
+         </div>
 
         </div>
     </nav>
+
+    <div>
+        <div class="popup">
+            
+        </div>
+        <button class="btn-popup">Tutup</button>
+        <div class="popup-back">
+
+        </div>
+    </div>
     
     <section class="hero">
         <h1 class="title">Collect <Span class="dot">.</Span> Campaign <span class="dot">.</span> Circulate</h1>
@@ -415,6 +428,41 @@
             copyright 2021 | Ewaste-Community
         </div>
     </section>
+
+    <script>
+        setTimeout(() => {
+                document.querySelector('.popup').style.opacity = 1;
+                document.querySelector('.popup').style.animationName = 'pp';
+                document.querySelector('.popup').style.animationDuration = '1s';
+                document.querySelector('.popup').style.animationTimingFunction = 'ease';
+                
+                document.querySelector('.btn-popup').style.opacity = 1;
+                document.querySelector('.btn-popup').style.animationName = 'bp';
+                document.querySelector('.btn-popup').style.animationDuration = '.9s';
+                document.querySelector('.btn-popup').style.animationTimingFunction = 'ease';
+                
+                document.querySelector('.popup-back').style.opacity = 1;
+        }, 3500)
+        
+        document.querySelector('.btn-popup').addEventListener('click', () => {
+
+            localStorage.setItem('v', true)
+            document.querySelector('.popup').style.marginTop = '-100px';
+            document.querySelector('.popup').style.transition = '0.4s';
+            document.querySelector('.popup').style.opacity = 0;
+            document.querySelector('.btn-popup').style.marginTop = '100px';
+            document.querySelector('.btn-popup').style.transition = '0.4s';
+            document.querySelector('.btn-popup').style.opacity = 0;
+            document.querySelector('.popup-back').style.transition = '0.4s';
+            document.querySelector('.popup-back').style.opacity = 0;
+
+            setTimeout(() => {
+                document.querySelector('.popup').style.display = 'none';
+                document.querySelector('.btn-popup').style.display = 'none';
+                document.querySelector('.popup-back').style.display = 'none';
+            }, 1000)
+        })
+    </script>
 
     <script>
         let v = -0;
