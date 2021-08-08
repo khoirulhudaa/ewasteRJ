@@ -10,13 +10,10 @@ h4, h5, h6, small, p {
     font-family: 'Open Sans', sans-serif;
 }
 
-* {
-    overflow-x: hidden;
-}
 
 body {
     padding: 0;
-    overflow-x: hidden;
+    overflow-x: scroll;
     margin: 0;
 }
 
@@ -33,7 +30,7 @@ body {
     max-height: 104px;
     padding: 45px 95px 51px 97px;
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
     z-index: 9999;
     justify-content: center;
@@ -52,14 +49,62 @@ body {
 }
 
 .navbar ul {
-    margin-top: 30px;
-    margin-left: -10px;
+    position: relative;
+    left: 17px;
+    margin-top: -5px;
+    margin-left: 35px;
+}
+
+.nav-brand {
+    width: 10%;
+}
+
+.navs {
+    width: 10%;
+}
+
+.navs1 {
+    width: max-content;
+}
+
+.navbar ul li {
+    margin: 0 20px 0 28px;
+}
+
+#btnNavs {
+    width: 28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_masuk {
+    color: #1E272E;
+    margin-right: 24px;
+    outline: none;
+    border: none;
 }
 
 .btn_daftar {
     color: white;
     background-color: #00B294;
     outline: none;
+    border: none;
+}
+
+.btn_masuk2 {
+    color: #1E272E;
+    margin-right: 24px;
+    outline: none;
+    display: none;
+    border: none;
+}
+
+.btn_daftar2 {
+    color: white;
+    background-color: #00B294;
+    outline: none;
+    display: none;
     border: none;
 }
 
@@ -442,6 +487,17 @@ body {
         display: none;
     }
 
+    .navbar img {
+        width: 110px;
+        position: relative;
+        left: -70px;
+    }
+
+    .navbar-toggler {
+        position: relative;
+        left: 100px;
+    }
+
     .btn_masuk2 {
         color: #1E272E;
         margin-right: 24px;
@@ -449,10 +505,6 @@ body {
         border: none;
         margin-top: 20px;
         display: inline;
-    }
-    
-    .navbar img {
-        width: 60%;
     }
     
     .btn_daftar2 {

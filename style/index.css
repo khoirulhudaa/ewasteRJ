@@ -49,7 +49,9 @@ body {
 }
 
 .navbar ul {
-    margin-top: 30px;
+    position: relative;
+    left: 10px;
+    margin-top: 35px;
     margin-left: 30px;
 }
 
@@ -66,7 +68,7 @@ body {
 }
 
 .navbar ul li {
-    margin: 0 20px 0 24px;
+    margin: 0 20px 0 28px;
 }
 
 #btnNavs {
@@ -1029,6 +1031,11 @@ textarea {
         position: relative;
         left: -70px;
     }
+
+    .navbar-toggler {
+        position: relative;
+        left: 100px;
+    }
     
     .btn_daftar2 {
         color: white;
@@ -1037,11 +1044,6 @@ textarea {
         border: none;
         margin-top: 20px;
         display: inline;
-    }
-
-    .navbar-toggler {
-        position: relative;
-        left: 100px;
     }
     
     .navbar ul {
