@@ -442,12 +442,14 @@
                 document.querySelector('.btn-popup').style.animationTimingFunction = 'ease';
                 
                 document.querySelector('.popup-back').style.opacity = 1;
+                document.querySelector('.hero').style.overflowY = 'hidden';
                 document.getElementsByTagName("BODY")[0].style.overflowX = 'hidden';
                 document.getElementsByTagName("BODY")[0].style.overflowY = 'hidden';
             }, 3500)
             
             document.querySelector('.btn-popup').addEventListener('click', () => {
                 
+            document.querySelector('.hero').style.overflowY = 'auto';
             document.getElementsByTagName("BODY")[0].style.overflowX = 'hidden';
             document.getElementsByTagName("BODY")[0].style.overflowY = 'scroll';
             localStorage.setItem('v', true)
