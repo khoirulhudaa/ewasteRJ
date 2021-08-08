@@ -442,10 +442,14 @@
                 document.querySelector('.btn-popup').style.animationTimingFunction = 'ease';
                 
                 document.querySelector('.popup-back').style.opacity = 1;
-        }, 3500)
-        
-        document.querySelector('.btn-popup').addEventListener('click', () => {
-
+                document.getElementsByTagName("BODY")[0].style.overflowX = 'hidden';
+                document.getElementsByTagName("BODY")[0].style.overflowY = 'hidden';
+            }, 3500)
+            
+            document.querySelector('.btn-popup').addEventListener('click', () => {
+                
+            document.getElementsByTagName("BODY")[0].style.overflowX = 'hidden';
+            document.getElementsByTagName("BODY")[0].style.overflowY = 'scroll';
             localStorage.setItem('v', true)
             document.querySelector('.popup').style.marginTop = '-100px';
             document.querySelector('.popup').style.transition = '0.4s';
