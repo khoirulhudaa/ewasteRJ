@@ -498,26 +498,14 @@ body {
         left: 100px;
     }
 
-    .btn_masuk2 {
-        color: #1E272E;
-        margin-right: 24px;
-        outline: none;
-        border: none;
-        margin-top: 20px;
-        display: inline;
-    }
-    
-    .btn_daftar2 {
-        color: white;
-        background-color: #00B294;
-        outline: none;
-        border: none;
-        margin-top: 20px;
-        display: inline;
+    .navbar ul li {
+      margin: 0;
+      position: relative;
+      left: -18px;
     }
     
     .navbar ul {
-        margin-top: 30px;
+        margin-top: 10px;
         color: white;
         margin-left: 10px;
     }
@@ -528,6 +516,11 @@ body {
 
     .navbar-toggler {
         z-index: 33;
+    }
+
+    .navbar li {
+        margin-left: 0;
+        left: 0;
     }
     
     .btn_masuk {
@@ -544,6 +537,14 @@ body {
     button:active {
         border: none;
         outline: none;
+    }
+
+    .btn_masuk2 {
+        display: inline-block;
+    }
+
+    .btn_daftar2 {
+        display: none;
     }
 
     .navbar button {
