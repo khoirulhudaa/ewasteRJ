@@ -1109,6 +1109,17 @@ textarea {
 
 @media screen and (max-width: 767px) {
 
+    section {
+        overflow-x: hidden;
+    }
+    section {
+        overflow-x: hidden;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
     .popup {
         width: 85vw;
     }

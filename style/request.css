@@ -603,6 +603,14 @@ textarea {
         margin-left: auto;
         margin-right: auto;
     }
+    
+    body {
+        overflow-x: hidden;
+    }
+    section {
+        overflow-x: hidden;
+    }
+
 }
 
 @media screen and (min-width: 1800px) {

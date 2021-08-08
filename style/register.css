@@ -151,6 +151,14 @@ label {
 }
 
 @media screen and (max-width: 576px) {
+    
+    body {
+        overflow-x: hidden;
+    }
+    section {
+        overflow-x: hidden;
+    }
+
     .login {
         display: flex;
         justify-content: center;

@@ -618,6 +618,14 @@ textarea {
 }
 
 @media screen and (min-width: 1800px) {
+    
+    body {
+        overflow-x: hidden;
+    }
+    section {
+        overflow-x: hidden;
+    }
+
     .formulir .fre1 {
         width: 85%;
         display: flex;

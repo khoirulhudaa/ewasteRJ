@@ -509,6 +509,14 @@ label {
         overflow: hidden;
         padding-top: 14px;
     }
+    
+    body {
+        overflow-x: hidden;
+    }
+    section {
+        overflow-x: hidden;
+    }
+
 }
 
 @media screen and (min-width: 1800px) {

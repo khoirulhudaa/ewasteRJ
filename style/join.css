@@ -633,6 +633,14 @@ h1::before {
         transform: rotate(180deg);
         width: 200px;
     }
+    
+    body {
+        overflow-x: hidden;
+    }
+    section {
+        overflow-x: hidden;
+    }
+
 }
 
 @media screen and (min-width: 1800px) {
