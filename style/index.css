@@ -1025,7 +1025,9 @@ textarea {
     }
     
     .navbar img {
-        width: 80%;
+        width: 110px;
+        position: relative;
+        left: -70px;
     }
     
     .btn_daftar2 {
@@ -1035,6 +1037,11 @@ textarea {
         border: none;
         margin-top: 20px;
         display: inline;
+    }
+
+    .navbar-toggler {
+        position: relative;
+        left: 100px;
     }
     
     .navbar ul {
@@ -1123,7 +1130,7 @@ textarea {
         height: max-content;
         display: flex;
         flex-direction: column;
-        background-image: url('../img/hero.svg');
+        /* background-image: url('../img/hero.svg'); */
         background-position: center;
         background-size: cover;
         filter: brightness(90%);
@@ -1190,7 +1197,7 @@ textarea {
         padding-top: 66px;
         display: flex;
         text-align: center;
-        background-image: url('../img/bg_count.svg');
+        /* background-image: url('../img/bg_count.svg'); */
         background-color: lavender;
         align-items: center;
         background-size: cover;
