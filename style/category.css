@@ -280,12 +280,12 @@ body {
 
 @media screen and (max-width: 567px) {
     
-    body {
-        overflow-x: hidden;
-    }
-    section {
-        overflow-x: hidden;
-    }
+body {
+    overflow-x: hidden;
+}
+section {
+    overflow-x: hidden;
+}
 
 .btn_masuk2 {
     width: 100vw;
@@ -429,6 +429,125 @@ button:active {
         margin-left: auto;
         margin-right: auto;
     }
+
+    .kotak, .kotak2, .kotak3, .kotak4 {
+        display: none;
+    }
+        
+    .hero-category {
+        width: 100vw;
+        height: 70vh;
+        text-align: center;
+    }
+
+    .hero-category h1 {
+        position: relative;
+        margin-top: 50px;
+        font-weight: bold;
+        font-size: 35px;
+        padding-top: 20px;
+    }
+
+    .kotak {
+        position: absolute;
+        margin-left: 220px;
+        margin-top: -35px;
+    }
+
+    .menu-category {
+        width: 100vw;
+        text-align: center;
+        position: relative;
+        margin-top: -160px;
+        margin-bottom: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wrap-menu-category {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-category h1::before {
+        position: absolute;
+        content: '';
+        margin-top: -14px;
+        width: 80px;
+        height: 6px;
+        background-color: rgb(16, 163, 3);
+    }
+
+    .hero-category .p {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .btn-menu {
+        border: none;
+        outline: none;
+        background-color: rgba(241, 242, 243, 1);
+        color: black;
+        cursor: pointer;
+        border-radius: 4px;
+        font-weight: bold;
+        padding: 12px;
+        margin: 14px 20px;
+        transition: 0.3s;
+    }
+
+    .menu-img {
+        width: 100vw;
+        height: max-content;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .kotak4 {
+        position: absolute;
+        width: 200px;
+        margin-top: 200px;
+        right: 0;
+        transform: rotateX(180deg) rotateY(180deg);
+    }
+    
+    .wrap-menu-img {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: max-content;
+    }
+
+    .card-menusx:hover {
+        transition: 0.4s;
+        transform: scale(0.9);
+    }
+    
+    .card-menusx p {
+        font-weight: bold;
+    }
+
+    .wrap-menu-img .card-menusx {
+        width: 200px;
+        transition: 0.4s;
+        margin: 0 10px 50px 10px;
+        box-shadow: none;
+    }
+
+    .btn-menu:hover {
+        filter: brightness(90%);
+        transition: 0.3s;
+    }
+
 }
 
 @media screen and (min-width: 1800px) {
