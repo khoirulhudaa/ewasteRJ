@@ -4,29 +4,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EwasteRJ - Join</title>
+    <link rel="stylesheet" href="./style/collections.css">
+    <link rel="stylesheet" href="./bs/css/bootstrap.min.css">
+    <style>
+        .navs {
+            display: none;
+        }
+        body {
+            overflow-x: hidden;
+        }
+    </style>
 </head>
 <body>
     
-<canvas id="myChart" style="width: 20vh;height: 30vw;position: relative;"></canvas>
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid" style="display: flex;justify-content: center;align-items: center;">
+        <a class="navbar-brand" href="#" style="max-width: 15%;">
+            <img src="./img/logo.svg" alt="a">
+        </a>
+        <button class="navbar-toggler" id="toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" id="toggler2"></span>
+        </button>
+        <div class="collapse navbar-collapse navs1" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="./location.html">Locations</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="./articles.html">Our activity</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="./articles.html">Lates news</a>
+            </li>
+            <li class="nav-item">
+                <a href="./login.html"><button class="btn_masuk2" type="submit">Sign in</button></a>
+            </li>
+            <li class="nav-item">
+                <a href="./register.html"><button class="btn_daftar2" type="submit">Sign up</button></a>
+            </li>
+        </ul>
+    </div>
+        <div class="collapse navbar-collapse navs nn" style="width: 15%;">
+            <form class="d-flex">
+                <a href="./login.html"><button class="btn_masuk" type="submit">Sign in</button></a>
+                <a href="./register.html"><button class="btn_daftar" type="submit">Sign up</button></a>
+            </form>
+        </div>
+    </div>
+</nav>
+
+ <section class="collection">
+     <img src="./img/fl1.svg" alt="s" class="kotak-coll">
+     <h1>Collections <span class="green">Ewaste</span></h1>
+     <div class="wrap-collection">
+        <div class="coll-left">
+            <canvas id="myChart" style="width: 20vh;height: 30vw;position: relative;"></canvas>
+        </div>
+        <div class="coll-right">
+            <span>
+                <div class="one"></div>
+                <p>Category 1</p>
+            </span>
+            <span>
+                <div class="two"></div>
+                <p>Category 2</p>
+            </span>
+            <span>
+                <div class="three"></div>
+                <p>Category 3</p>
+            </span>
+            <span>
+                <div class="four"></div>
+                <p>Category 4</p>
+            </span>
+            <span>
+                <div class="five"></div>
+                <p>Category 5</p>
+            </span>
+            <span>
+                <div class="six"></div>
+                <p>Category 6</p>
+            </span>
+        </div>
+    </div>
+ </section>
+ 
+ <section class="year">
+     <h1>Collected per <span class="green">year</span></h1>
+     <div class="wrap-year">
+        <div id="container"></div>
+    </div>
+    <img src="./img/fl1.svg" alt="s" class="kotak-coll2">
+</section>
+
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
-
-    const labels = [
-        'Januarys',
-        'February',
-        'March',
-        'April',
-        'May',
-        'June',
-        ];
+  
         const data = {
-        labels: labels,
         datasets: [{
             label: 'My First dataset',
-            backgroundColor: 'rgb(255, 99, 132)',
-            borderColor: 'rgb(255, 99, 132)',
+            backgroundColor: ['rgba(11, 232, 129, 1)', 'rgba(93, 95, 239, 1)', 'rgba(0, 87, 255, 1)', 'rgba(255, 192, 72, 1)', 'rgba(239, 93, 168, 1)', 'rgba(52, 231, 228, 1)'],
+            borderColor: 'transparent',
             data: [0, 10, 5, 2, 20, 30, 45],
         }]
     };
@@ -46,5 +132,122 @@
     );
 
 </script>
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<script>
+    Highcharts.chart('container', {
+    chart: {
+        type: 'areaspline'
+    },
+    title: {
+        text: 'Average fruit consumption during one week'
+    },
+    legend: {
+        layout: 'vertical',
+        align: 'left',
+        verticalAlign: 'top',
+        x: 150,
+        y: 100,
+        floating: true,
+        borderWidth: 1,
+        backgroundColor:
+            Highcharts.defaultOptions.legend.backgroundColor || '#FFFFFF'
+    },
+    xAxis: {
+        categories: [
+            'Monday',
+            'Tuesday',
+            'Wednesday',
+            'Thursday',
+            'Friday',
+            'Saturday',
+            'Sunday'
+        ],
+        plotBands: [{ // visualize the weekend
+            from: 4.5,
+            to: 6.5,
+            color: 'rgba(68, 170, 213, .2)'
+        }]
+    },
+    yAxis: {
+        title: {
+            text: 'Fruit units'
+        }
+    },
+    tooltip: {
+        shared: true,
+        valueSuffix: ' units'
+    },
+    credits: {
+        enabled: false
+    },
+    plotOptions: {
+        areaspline: {
+            fillOpacity: 0.5
+        }
+    },
+    series: [{
+        name: 'John',
+        data: [3, 4, 3, 5, 4, 10, 12]
+    }, {
+        name: 'Jane',
+        data: [1, 3, 4, 3, 3, 5, 4]
+    }]
+});
+           
+</script>
+
+<section class="footer">
+    <div class="logo-footer">
+        <img src="./img/logo2.svg" alt="">
+    </div>
+    <div class="content-footer">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing 
+            elit. Repudiandae facilis dolor inventore.
+            Lorem ipsum dolor, sit amet consectetur adipisicing 
+        </p>
+    </div>
+    <div class="sosmed">
+        <img src="./img/sosmed.svg" alt="">
+    </div>
+    <div class="copyright">
+        copyright 2021 | Ewaste-Community
+    </div>
+</section>
+
+
+<script>
+    let v = -0;
+
+    document.querySelector('.icons').addEventListener('click', () => {
+        v = v + 1;
+        if(v % 2 == 1) {
+            if(window.innerWidth >= 1000) {
+                document.querySelector('.logout').style.opacity = 1;
+                document.querySelector('.logout').style.marginTop = '160px';
+                document.querySelector('.logout').style.transform = `scale(1)`;
+            }else if (window.innerWidth <= 1000) {
+                document.querySelector('.logout').style.opacity = 1;
+                document.querySelector('.logout').style.marginTop = '75px';
+                document.querySelector('.logout').style.transform = `scale(1)`;
+            }
+        }else if(v % 2 == 0) {
+            document.querySelector('.logout').style.opacity = 0;
+            document.querySelector('.logout').style.marginTop = '100px';
+            document.querySelector('.logout').style.transform = `scale(0)`;
+        }
+    })
+</script>
+<script src="./bs/js/bootstrap.min.js"></script>
+<script>
+    document.querySelector('.navbar-toggler').addEventListener('click', () => {
+        document.querySelector('.btn_masuk').style.display = 'inline'
+        document.querySelector('.btn_daftar').style.display = 'flex'
+    })
+</script>
 </body>
+</html></body>
 </html>
