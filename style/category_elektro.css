@@ -191,11 +191,6 @@ body {
     background-color: transparent;
 }
 
-.card-menusx p {
-    font-weight: bold;
-    margin-top: 20px;
-}
-
 .active-menu {
     background-color: rgba(241, 242, 243, 1);
 }
@@ -211,10 +206,15 @@ body {
     text-align: center;
 }
 
+.card-menusx p {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
 .kotak4 {
     position: absolute;
     width: 200px;
-    margin-top: 200px;
+    margin-top: 275px;
     right: 0;
     transform: rotateX(180deg) rotateY(180deg);
 }

@@ -7,6 +7,7 @@
     <title>EwasteRJ - Location</title>
     <link rel="stylesheet" href="./style/location.css">
     <link rel="stylesheet" href="./bs/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./icons/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
     <style>
@@ -65,74 +66,23 @@
     <section class="location">
         <div id="mapid" style="width: 100vw;height: 400px;"></div>
     </section>
-
+    
     <section class="list-product">
         <h1>Drop <span class="green">e-waste</span></h1>
         <p class="p">
             Lorem ipsum dolor sit amet consectetur adipisicing 
             elit. Beatae, impedit. Lorem ipsum dolor sit.
         </p>
+        
+        <div class="search">
+            <div class="wrap-search">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="search city or ewaste locations">
+                <button class="btn-search">Cari</button>
+            </div>
+        </div>
+
         <div class="products">
-            <div class="card-product">
-                <div class="card-head">
-                    <img src="./img/lokasi2.svg" alt="s">
-                </div>
-                <div class="card-body">
-                    <h3>Gudang E-wasteRJ</h3>
-                    <p>Cp: Anna: 0897 484674 7373</p>
-                    <small class="alamat">Jl. Cideng Jaya Blok. Sjiaba No. 66</small>
-                </div>
-            </div>
-            <div class="card-product">
-                <div class="card-head">
-                    <img src="./img/lokasi2.svg" alt="s">
-                </div>
-                <div class="card-body">
-                    <h3>Gudang E-wasteRJ</h3>
-                    <p>Cp: Anna: 0897 484674 7373</p>
-                    <small class="alamat">Jl. Cideng Jaya Blok. Sjiaba No. 66</small>
-                </div>
-            </div>
-            <div class="card-product">
-                <div class="card-head">
-                    <img src="./img/lokasi2.svg" alt="s">
-                </div>
-                <div class="card-body">
-                    <h3>Gudang E-wasteRJ</h3>
-                    <p>Cp: Anna: 0897 484674 7373</p>
-                    <small class="alamat">Jl. Cideng Jaya Blok. Sjiaba No. 66</small>
-                </div>
-            </div>
-            <div class="card-product">
-                <div class="card-head">
-                    <img src="./img/lokasi2.svg" alt="s">
-                </div>
-                <div class="card-body">
-                    <h3>Gudang E-wasteRJ</h3>
-                    <p>Cp: Anna: 0897 484674 7373</p>
-                    <small class="alamat">Jl. Cideng Jaya Blok. Sjiaba No. 66</small>
-                </div>
-            </div>
-            <div class="card-product">
-                <div class="card-head">
-                    <img src="./img/lokasi2.svg" alt="s">
-                </div>
-                <div class="card-body">
-                    <h3>Gudang E-wasteRJ</h3>
-                    <p>Cp: Anna: 0897 484674 7373</p>
-                    <small class="alamat">Jl. Cideng Jaya Blok. Sjiaba No. 66</small>
-                </div>
-            </div>
-            <div class="card-product">
-                <div class="card-head">
-                    <img src="./img/lokasi2.svg" alt="s">
-                </div>
-                <div class="card-body">
-                    <h3>Gudang E-wasteRJ</h3>
-                    <p>Cp: Anna: 0897 484674 7373</p>
-                    <small class="alamat">Jl. Cideng Jaya Blok. Sjiaba No. 66</small>
-                </div>
-            </div>
             <div class="card-product">
                 <div class="card-head">
                     <img src="./img/lokasi2.svg" alt="s">
@@ -166,6 +116,15 @@
         </div>
     </section>
     <button class="btn-load">Selengkapnya</button>
+
+    <div class="safe">
+        <div class="left-safe">
+            <h2>Safe earth, <br> Safe You</h2>
+        </div>
+        <div class="right-safe">
+            <button class="btn-safe">Drop ewaste</button>
+        </div>
+    </div>
 
     <section class="footer">
         <div class="logo-footer">

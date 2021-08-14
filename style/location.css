@@ -142,6 +142,106 @@ body {
     width: 40%;
 }
 
+.search {
+    width: 100vw;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap-search {
+    width: 50%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    height: max-content;
+    background-color: #fff;
+    box-sizing: border-box;
+    box-shadow: 1px 2px 6px rgba(179, 179, 179, 0.541);
+}
+
+.wrap-search i {
+    opacity: 0.8;
+    font-size: 20px;
+}
+
+.btn-search {
+    margin-left: auto;
+    border: none;
+    outline: none;
+    background-color: rgb(0, 175, 29);
+    color: white;
+    cursor: pointer;
+    width: 80px;
+    height: 40px;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.wrap-search input {
+    border: none;
+    outline: none;
+    padding-left: 15px;
+    width: 300px;
+    font-size: 18px;
+    margin-left: 12px;
+}
+
+.safe {
+    width: 70%;
+    height: 170px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    /* background-image: url('../img/bg_count.svg'); */
+    background-color: rgb(119, 119, 119);
+    box-shadow: 1px 2px 6px rgba(185, 185, 185, 0.616);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 70px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.safe h2 {
+    color: white;
+    font-size: 40px;
+    line-height: 1.4em;
+    font-weight: bold;
+}
+
+.right-safe {
+    padding-right: 30px;
+}
+
+.btn-safe {
+    margin-left: auto;
+    border: none;
+    outline: none;
+    background-color: rgb(0, 175, 29);
+    color: white;
+    cursor: pointer;
+    width: 200px;
+    height: max-content;
+    padding: 8px 10px;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.left-safe {
+    padding-left: 30px;
+}
+
 .products {
     display: flex;
     justify-content: center;
