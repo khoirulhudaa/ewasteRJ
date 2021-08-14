@@ -6,6 +6,11 @@ h1, h2, h3 {
     font-family: 'Spartan', sans-serif;
 }
 
+.nn {
+    position: relative;
+    right: 60px;
+}
+
 h4, h5, h6, small, p {
     font-family: 'Open Sans', sans-serif;
 }
@@ -50,9 +55,9 @@ body {
 
 .navbar ul {
     position: relative;
-    left: 17px;
-    margin-top: -5px;
-    margin-left: 35px;
+    left: 10px;
+    margin-top: 5px;
+    margin-left: 20px;
 }
 
 .nav-brand {
@@ -120,7 +125,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgb(16, 163, 3);
+    background-color: rgba(198, 225, 201, 1);
     color: white;
 }
 
@@ -580,7 +585,7 @@ textarea {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background-color: rgb(16, 163, 3);
+        background-color: rgba(198, 225, 201, 1);
         color: white;
     }
 
