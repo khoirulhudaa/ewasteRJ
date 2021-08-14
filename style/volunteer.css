@@ -219,7 +219,7 @@ label {
     margin-left: -95px;
     color: white;
     transform: translate(-50%, -50%);
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: 35%;
     right: 0;
     font-weight: 500;
@@ -235,7 +235,7 @@ label {
     border-radius: 4px;
     padding: 12px;
     border-radius: 10px;
-    width: 350px;
+    width: 150px;
     color: rgb(70, 255, 95);;
     font-size: 18px;
 }
@@ -269,21 +269,18 @@ h1::before {
 .title-about h1 {
     position: relative;
     font-weight: bold;
-    font-size: 44px;
-    line-height: 1.3em;
+    font-size: 54px;
 }
 
 .fl1 {
     position: absolute;
-    margin-top: -6  0px;
-    width: 220px;
+    margin-top: -110px;
 }
 
 .fl2 {
     position: absolute;
     right: 0;
-    margin-top: -210px;
-    width: 200px;
+    margin-top: -310px;
     transform: rotate(180deg);
 }
 
