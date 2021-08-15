@@ -1571,7 +1571,7 @@ textarea {
         border: none;
         outline: none;
         color: white;
-        background-color: #00B294;
+        background-color: rgba(0, 186, 79, 1);
         z-index: 2;
     }
 
